@@ -47,5 +47,5 @@ first_name: Xiaochen
 email: xiaochen.ma.cs@gmail.com
 ---
 
-Xiaochen Ma is a research assistant of DICA Lab at the Sichuan University. Her research interests include xxxx.
+Xiaochen Ma is a Research Assistant at the Sichuan University, advised by Prof. [Jizhe Zhou](https://cs.scu.edu.cn/info/1283/17001.htm). Before that, He received his B.E. in Computer Science from the Colledge of Computer Science, Sichuan University, in 2023. His research interest lies in the Computer Vision, Image Segmentation, Image Forensic especially image manipulation localization.
 {style="text-align: justify;"}

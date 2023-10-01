@@ -72,7 +72,7 @@ sections:
         - title: Research Assistant
           company: Sichuan University
           company_url: 'https://scu.edu.cn'
-          company_logo: org-gc
+          company_logo: scu
           location: China
           date_start: '2023-07-01'
           date_end: ''
