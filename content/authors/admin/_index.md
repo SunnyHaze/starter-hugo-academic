@@ -31,7 +31,7 @@ social:
     icon_pack: ai
     link: uploads/resume.pdf
 organizations:
-  - name: Sichuan University
+  - name: Sichuan University, China
     url: https://scu.edu.cn/
 education:
   courses:
