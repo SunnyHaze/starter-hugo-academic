@@ -1,7 +1,7 @@
 ---
 title: Xiaochen Ma （马晓晨）
 role: Research Assistant
-avatar_filename: 微信图片_202307012254101.jpg
+avatar_filename: avatar.jpg
 bio: My research interests include Computer Vision, Image Forensic, Image
   manipulation detection.
 interests:
