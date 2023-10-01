@@ -37,7 +37,7 @@ education:
   courses:
     - course: BEng in Computer Science
       institution: Sichuan University
-      year: 2022
+      year: 2023
 superuser: true
 status:
   icon: ☕️
