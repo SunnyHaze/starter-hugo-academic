@@ -1,5 +1,5 @@
 ---
-title: Xiaochen Ma （马晓晨）
+title: Xiaochen Ma
 role: Research Assistant
 avatar_filename: avatar.jpg
 bio: My research interests include Computer Vision, Image Forensic, Image
@@ -41,11 +41,11 @@ education:
 superuser: true
 status:
   icon: ☕️
-last_name: Wu
+last_name: Ma
 highlight_name: true
-first_name: Alice
+first_name: Xiaochen
 email: xiaochen.ma.cs@gmail.com
 ---
 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Xiaochen Ma is a research assistant of DICA Lab at the Sichuan University. Her research interests include xxxx.
 {style="text-align: justify;"}
