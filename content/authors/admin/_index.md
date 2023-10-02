@@ -48,5 +48,5 @@ first_name: Xiaochen
 email: xiaochen.ma.cs@gmail.com
 ---
 
-Xiaochen Ma is a Research Assistant at Sichuan University, advised by Prof. [Jizhe Zhou](https://cs.scu.edu.cn/info/1283/17001.htm). Before that, He received his B.E. in Computer Science from the Colledge of Computer Science, Sichuan University, in 2023. His research interest lies in Computer Vision, Image Segmentation, Image Forensics especially image manipulation localization. He is looking for an opportunity to develop a fundamental paradigm for image segmentation with large models.
+Xiaochen Ma is a Research Assistant at Sichuan University, advised by Prof. [Jizhe Zhou](https://cs.scu.edu.cn/info/1283/17001.htm). Before that, He received his B.E. in Computer Science from the Colledge of Computer Science, Sichuan University, in 2023. His research interest lies in Computer Vision, Image Segmentation, and Image Forensics, especially image manipulation localization. He is looking for an opportunity to develop a fundamental paradigm for image segmentation with large models.
 {style="text-align: justify;"}
