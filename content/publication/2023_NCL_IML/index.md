@@ -42,9 +42,10 @@ tags: []
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links:
+- name: URL
+  url: http://arxiv.org/abs/2309.14900
+
 
 url_pdf: 'https://arxiv.org/pdf/2309.14900.pdf'
 url_code: 'https://github.com/Knightzjz/NCL-IML'
