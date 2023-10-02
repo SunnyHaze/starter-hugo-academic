@@ -1,6 +1,5 @@
 ---
-title: 'Pre-training-free Image Manipulation Localization through Non-Mutually Exclusive
-  Contrastive Learning'
+title: 'Pre-training-free Image Manipulation Localization through Non-Mutually Exclusive Contrastive Learning'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -45,7 +44,9 @@ featured: true
 links:
 - name: arXiv
   url: http://arxiv.org/abs/2309.14900
-url_pdf: 'https://arxiv.org/pdf/2309.14900.pdf'
+- name: URL
+  url: https://openaccess.thecvf.com/content/ICCV2023/html/Zhou_Pre-Training-Free_Image_Manipulation_Localization_through_Non-Mutually_Exclusive_Contrastive_Learning_ICCV_2023_paper.html
+url_pdf: 'https://openaccess.thecvf.com/content/ICCV2023/papers/Zhou_Pre-Training-Free_Image_Manipulation_Localization_through_Non-Mutually_Exclusive_Contrastive_Learning_ICCV_2023_paper.pdf'
 url_code: 'https://github.com/Knightzjz/NCL-IML'
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 url_poster: ''
