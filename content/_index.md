@@ -217,7 +217,7 @@ sections:
       title: Publications
       text: |-
         {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
+         [Click here for filtering publications](./publication/).
         {{% /callout %}}
       filters:
         folders:
