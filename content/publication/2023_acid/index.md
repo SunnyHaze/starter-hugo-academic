@@ -7,7 +7,7 @@ authors:
 - Yang Yang
 - Zhongtao Shang
 - Qinfei Chen
-- Xiaochen Ma
+- admin
 - Zhuoqun Qian
 - Wenbin Liu
 # author_notes:
@@ -35,11 +35,11 @@ abstract: l-Lactic acid is a natural α-hydroxy carboxylic acid and is commonly 
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-- Source Themes
+# - Source Themes
 featured: false
 
 links:
-# - name: ""
+- name: "URL"
   url: "https://www.sciencedirect.com/science/article/abs/pii/S1389172323001810"
 # url_pdf: http://arxiv.org/pdf/1512.04133v1
 # url_code: 'https://github.com/wowchemy/wowchemy-hugo-themes'
