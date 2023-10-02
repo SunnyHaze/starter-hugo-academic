@@ -222,7 +222,7 @@ sections:
       filters:
         folders:
           - publication
-        exclude_featured: true
+        exclude_featured: False
     design:
       columns: '2'
       view: citation
