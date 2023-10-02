@@ -43,10 +43,8 @@ featured: true
 
 # Custom links (uncomment lines below)
 links:
-- name: arxiv
+- name: arXiv
   url: http://arxiv.org/abs/2309.14900
-
-
 url_pdf: 'https://arxiv.org/pdf/2309.14900.pdf'
 url_code: 'https://github.com/Knightzjz/NCL-IML'
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
