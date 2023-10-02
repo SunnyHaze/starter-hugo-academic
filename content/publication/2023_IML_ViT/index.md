@@ -28,7 +28,7 @@ abstract: "Advanced image tampering techniques are increasingly challenging the 
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-- Source Themes
+# - Source Themes
 featured: false
 
 links:
