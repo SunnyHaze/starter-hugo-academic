@@ -76,18 +76,18 @@ features:
   avatar:
     gravatar: false
     shape: circle
-  # comment:
-  #   provider: ''
-  #   disqus:
-  #     shortname: ''
-  #     show_count: true
-  #   commento:
-  #     url: ''
-  #   giscus:
-  #     repo: ''
-  #     repo_id: ''
-  #     category: ''
-  #     category_id: ''
+  comment:
+    provider: ''
+    disqus:
+      shortname: ''
+      show_count: true
+    commento:
+      url: ''
+    giscus:
+      repo: ''
+      repo_id: ''
+      category: ''
+      category_id: ''
   search:
     provider: wowchemy
     algolia:
