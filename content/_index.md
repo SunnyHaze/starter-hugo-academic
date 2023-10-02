@@ -227,20 +227,21 @@ sections:
       columns: '2'
       view: citation
 
-  - block: collection
-    content:
-      title: In Draft
-      text: |-
-        {{% callout note %}}
-         [Click here for detaild information](./publication_backup/).
-        {{% /callout %}}
-      filters:
-        folders:
-          - publication_backup
-        exclude_featured: False
-    design:
-      columns: '2'
-      view: citation
+  # - block: collection
+  #   content:
+  #     title: Publications
+  #     text: |-
+  #       {{% callout note %}}
+  #        [Click here for detaild information](./publication/).
+  #       {{% /callout %}}
+  #     filters:
+  #       folders:
+  #         - publication
+  #       exclude_featured: False
+  #   design:
+  #     columns: '2'
+  #     view: citation
+
   # - block: collection
   #   id: talks
   #   content:
