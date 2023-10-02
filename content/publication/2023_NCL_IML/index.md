@@ -43,7 +43,7 @@ featured: true
 
 # Custom links (uncomment lines below)
 links:
-- name: URL
+- name: arxiv
   url: http://arxiv.org/abs/2309.14900
 
 
