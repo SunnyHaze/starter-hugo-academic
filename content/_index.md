@@ -258,6 +258,11 @@ sections:
   #     title: Popular Topics
   #   design:
   #     columns: '2'
+  # - block: Honors
+  #   id: 
+  #   content:
+  #     title: Contact
+
   - block: contact
     id: contact
     content:
