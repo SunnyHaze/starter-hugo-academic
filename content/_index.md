@@ -69,7 +69,7 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: Research Assistant
+        - title: Full-time Research Assistant
           company: Sichuan University
           company_url: 'https://scu.edu.cn'
           company_logo: scu
