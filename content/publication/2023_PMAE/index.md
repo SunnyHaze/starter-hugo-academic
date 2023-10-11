@@ -31,9 +31,9 @@ tags:
 featured: false
 
 links:
-# - name: Custom Link
-#   url: http://example.org
-# url_pdf: http://arxiv.org/pdf/1512.04133v1
+- name: arXiv
+  url: https://arxiv.org/abs/2310.06525
+url_pdf: https://arxiv.org/pdf/2310.06525.pdf
 # url_code: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 # url_dataset: '#'
 # url_poster: '#'
