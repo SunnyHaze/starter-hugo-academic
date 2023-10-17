@@ -34,7 +34,7 @@ links:
 - name: arXiv
   url: https://arxiv.org/abs/2310.06525
 url_pdf: https://arxiv.org/pdf/2310.06525.pdf
-# url_code: 'https://github.com/wowchemy/wowchemy-hugo-themes'
+url_code: 'https://github.com/SunnyHaze/PMAE'
 # url_dataset: '#'
 # url_poster: '#'
 # url_project: ''
@@ -45,7 +45,7 @@ url_pdf: https://arxiv.org/pdf/2310.06525.pdf
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
+  caption: 'PMAE structure.'
   focal_point: ""
   preview_only: false
 
