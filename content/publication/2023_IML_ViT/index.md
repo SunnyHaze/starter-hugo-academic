@@ -7,11 +7,11 @@ authors:
 - Ahmed Y. Al Hammadi
 - Jizhe Zhou*
 - 
-date: "2023-07-01"
+date: "2023-12-01"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2023-10-02T03:42:22.405780Z"
+publishDate: "2023-12-02T03:42:22.405780Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -20,7 +20,7 @@ publication_types: ["article"]
 
 # Publication name and optional abbreviated publication name.
 publication: "AAAI 2024"
-publication_short: "AAAI24"
+publication_short: "AAAI 2024"
 
 abstract: "Advanced image tampering techniques are increasingly challenging the trustworthiness of multimedia, leading to the development of Image Manipulation Localization (IML). But what makes a good IML model? The answer lies in the way to capture artifacts. Exploiting artifacts requires the model to extract non-semantic discrepancies between manipulated and authentic regions, necessitating explicit comparisons between the two areas. With the self-attention mechanism, naturally, the Transformer should be a better candidate to capture artifacts. However, due to limited datasets, there is currently no pure ViT-based approach for IML to serve as a benchmark, and CNNs dominate the entire task. Nevertheless, CNNs suffer from weak long-range and non-semantic modeling. To bridge this gap, based on the fact that artifacts are sensitive to image resolution, amplified under multi-scale features, and massive at the manipulation border, we formulate the answer to the former question as building a ViT with high-resolution capacity, multi-scale feature extraction capability, and manipulation edge supervision that could converge with a small amount of data. We term this simple but effective ViT paradigm IML-ViT, which has significant potential to become a new benchmark for IML. Extensive experiments on five benchmark datasets verified our model outperforms the state-of-the-art manipulation localization methods.Code and models are available at: https://github.com/SunnyHaze/IML-ViT."
 
