@@ -55,5 +55,5 @@ He enjoys embracing the open-source community and has currently garnered 200+ st
 His current research interest lies in Computer Vision, Image Segmentation, and Image Forensics, especially image manipulation localization. He is looking for an opportunity to develop a fundamental paradigm for image segmentation with large models.
 
 ### Services:
-Reviewer: ACM MM 2024 and NeurlIPS 2024.
+Reviewer: ACM MM and NeurIPS.
 {style="text-align: justify;"}
