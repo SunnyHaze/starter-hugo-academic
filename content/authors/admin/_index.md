@@ -53,4 +53,7 @@ He enjoys embracing the open-source community and has currently garnered 200+ st
 **Exciting news!** I will be pursuing my Ph.D. in Computer Vision at MBZUAI soon, looking forward to this new chapter in my academic journey!
 
 His current research interest lies in Computer Vision, Image Segmentation, and Image Forensics, especially image manipulation localization. He is looking for an opportunity to develop a fundamental paradigm for image segmentation with large models.
+
+### Services:
+Reviewer: ACM MM 2024 and NeurlIPS 2024.
 {style="text-align: justify;"}
