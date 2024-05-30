@@ -48,11 +48,11 @@ email: xiaochen.ma.cs@gmail.com
 ---
 Xiaochen Ma (马晓晨) has been a full-time Research Assistant at Sichuan University since July 2023, under the guidance of Prof. [Jizhe Zhou](https://Knightzjz.github.io). Prior to this, he earned his B.E. in Computer Science from the College of Computer Science at Sichuan University in June 2023, where he received an award for an outstanding undergraduate thesis (top 2 out of 400+ students).
 
-He enjoys embracing the open-source community and has currently garnered 200+ stars in all of his repositories on  {{< icon name="github" pack="fab" >}}GitHub.
-
-**Exciting news!** I will be pursuing my Ph.D. in Computer Vision at MBZUAI soon, looking forward to this new chapter in my academic journey!
+He enjoys embracing the open-source community and has currently garnered 300+ stars in all of his repositories on  {{< icon name="github" pack="fab" >}}GitHub.
 
 His current research interest lies in Computer Vision, Image Segmentation, and Image Forensics, especially image manipulation localization. He is looking for an opportunity to develop a fundamental paradigm for image segmentation with large models.
+
+**Exciting news!** I will be pursuing my Ph.D. in Computer Vision at MBZUAI soon, looking forward to this new chapter in my academic journey!
 
 ### Services:
 Reviewer: ACM MM and NeurIPS.
