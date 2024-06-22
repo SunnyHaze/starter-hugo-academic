@@ -73,8 +73,8 @@ sections:
           company: Mohamed bin Zayed University of Artificial Intelligence
           company_url: 'https://mbzuai.ac.ae/'
           company_logo: mbzuai
-          location: UAE
-          date_start: '2023-08-15'
+          location: United Arab Emirates
+          date_start: '2024-08-15'
           date_end: ''
 
         - title: Full-time Research Assistant
@@ -98,6 +98,7 @@ sections:
           location: Singapore
           date_start: '2022-06-01'
           date_end: '2022-07-01'
+
         - title: Undergraduate Student
           company: Sichuan University
           company_url: 'https://scu.edu.cn'
