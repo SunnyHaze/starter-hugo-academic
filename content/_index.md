@@ -69,13 +69,21 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: Incoming PhD Student in Computer Vision
+          company: Mohamed bin Zayed University of Artificial Intelligence
+          company_url: 'https://mbzuai.ac.ae/'
+          company_logo: mbzuai
+          location: UAE
+          date_start: '2023-08-15'
+          date_end: ''
+
         - title: Full-time Research Assistant
           company: Sichuan University
           company_url: 'https://scu.edu.cn'
           company_logo: scu
           location: China
           date_start: '2023-07-01'
-          date_end: ''
+          date_end: '2024-06-30'
           # description: |2-
           #     Responsibilities include:
 
