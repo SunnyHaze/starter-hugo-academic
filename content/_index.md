@@ -91,13 +91,13 @@ sections:
           #     * Modelling
           #     * Deploying
 
-        - title: Undergraduate Visiting Student
-          company: National University of Singapore
-          company_url: 'https://www.nus.edu.sg'
-          company_logo: nus
-          location: Singapore
-          date_start: '2022-06-01'
-          date_end: '2022-07-01'
+        # - title: Undergraduate Visiting Student
+        #   company: National University of Singapore
+        #   company_url: 'https://www.nus.edu.sg'
+        #   company_logo: nus
+        #   location: Singapore
+        #   date_start: '2022-06-01'
+        #   date_end: '2022-07-01'
 
         - title: Undergraduate Student
           company: Sichuan University
