@@ -46,8 +46,8 @@ highlight_name: true
 first_name: Xiaochen
 email: xiaochen.ma.cs@gmail.com
 ---
-Xiaochen Ma (马晓晨) is a Ph.D student in Computer vision at [MBZUAI](https://mbzuai.ac.ae/), UAE, under the mentorship of [Dr. Zhiqiang Shen](https://zhiqiangshen.com/) 
-Previously, he served as a full-time Research Assistant at [Sichuan University](https://scu.edu.cn/), China, from July 2023 to June 2024, Working with [Prof. Jizhe Zhou](https://Knightzjz.github.io). 
+Xiaochen Ma (马晓晨) is a Ph.D student in Computer vision at [MBZUAI](https://mbzuai.ac.ae/), UAE, under the mentorship of [Prof. Zhiqiang Shen](https://zhiqiangshen.com/).
+Previously, he served as a full-time Research Assistant at [Sichuan University](https://scu.edu.cn/), China, from July 2023 to June 2024, Working with and guided by [Prof. Jizhe Zhou](https://Knightzjz.github.io). 
 Xiaochen earned his B.E. in Computer Science from the College of Computer Science at Sichuan University in June 2023, where he was awarded for his outstanding undergraduate thesis, ranking in the top 2 out of over 400 students.
 
 He enjoys embracing the open-source community and has currently garnered 300+ stars in all of his repositories on  {{< icon name="github" pack="fab" >}}[GitHub](https://github.com/SunnyHaze).
