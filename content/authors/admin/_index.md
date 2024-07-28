@@ -37,7 +37,7 @@ education:
   courses:
     - course: Ph.D in Computer Vision
       institution: MBZUAI
-      year: 2028(expected)
+      year: 2028 (expected)
     - course: B.Eng. in Computer Science
       institution: Sichuan University
       year: 2023
