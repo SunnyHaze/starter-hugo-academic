@@ -31,10 +31,13 @@ social:
     icon_pack: ai
     link: uploads/resume.pdf
 organizations:
-  - name: MBZUAI, UAE
+  - name: MBZUAI, United Arab Emirates
     url: https://mbzuai.ac.ae/
 education:
   courses:
+    - course: Ph.D in Computer Vision
+      institution: MBZUAI
+      year: 2028(expected)
     - course: B.Eng. in Computer Science
       institution: Sichuan University
       year: 2023
