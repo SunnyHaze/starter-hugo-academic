@@ -284,13 +284,13 @@ sections:
       # phone: 888 888 88 88
       # appointment_url: 'https://calendly.com'
       address:
-        street: No.24 South Section 1, Yihuan Road
-        city: Chengdu
+        street: Masdar City
+        city: Abu Dhabi
         # region: 
-        postcode: '610065'
-        country: China
+        postcode: PO.Box 7909
+        country: United Arab Emirates
         # country_code: US
-      directions: 423, Block B, Basic Teaching Building
+      directions: Building 1B, Mohamed Bin Zayed University of Artificial Intelligence
       # office_hours:
       #   - 'Monday 10:00 to 13:00'
       #   - 'Wednesday 09:00 to 10:00'
