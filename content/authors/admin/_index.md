@@ -26,7 +26,7 @@ social:
     link: https://github.com/Sunnyhaze
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/xiaochen-ma-61b109250
+    link: https://www.linkedin.com/in/xiaochen-ma-61b109250/
   - icon: cv
     icon_pack: ai
     link: uploads/resume.pdf
