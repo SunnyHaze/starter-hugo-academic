@@ -224,8 +224,9 @@ sections:
   - block: collection
     id: publications
     content:
-      title: Publications
+      title: Publications 
       text: |-
+        (* for equal contribution)
         {{% callout note %}}
          [Click here for detaild information](./publication/).
         {{% /callout %}}
