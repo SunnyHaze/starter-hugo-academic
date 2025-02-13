@@ -1,24 +1,23 @@
 ---
 title: "IMDL-BenCo: A Comprehensive Benchmark and Codebase for Image Manipulation Detection & Localization"
 authors:
-- "admin*"
-- "Xuekang Zhu*"
-- "Lei Su*"
-- "Bo Du*"
-- "Zhuohang Jiang*"
-- "Bingkui Tong*"
-- "Zeyu Lei*"
-- "Xinyu Yang*"
+- admin
+- Xuekang Zhu
+- Lei Su
+- Bo Du
+- Zhuohang Jiang
+- Bingkui Tong
+- Zeyu Lei
+- Xinyu Yang
 - Chi-Man Pun
 - Jiancheng Lv
-- "Jizhe Zhou"
+- Jizhe Zhou
 
-
-date: "2024-06-20"
+date: "2024-12-20"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2024-96-02T03:42:22.405780Z"
+publishDate: "2024-12-20T03:42:22.405780Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -44,7 +43,7 @@ links:
 url_pdf: https://arxiv.org/pdf/2406.10580.pdf
 url_code: 'https://github.com/scu-zjz/IMDLBenCo'
 # url_dataset: '#'
-# url_poster: '#'
+url_poster: 'https://neurips.cc/media/PosterPDFs/NeurIPS%202024/97594.png?t=1731354740.441627'
 # url_project: ''
 # url_slides: ''
 # url_source: '#'
