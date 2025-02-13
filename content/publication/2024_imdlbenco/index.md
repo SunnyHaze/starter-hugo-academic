@@ -5,7 +5,7 @@ authors:
 - "Xuekang Zhu*"
 - "Lei Su*"
 - "Bo Du*"
-- "Zhuohang Jiang*""
+- "Zhuohang Jiang*"
 - "Bingkui Tong*"
 - "Zeyu Lei*"
 - "Xinyu Yang*"
