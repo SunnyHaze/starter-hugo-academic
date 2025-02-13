@@ -1,14 +1,14 @@
 ---
 title: "IMDL-BenCo: A Comprehensive Benchmark and Codebase for Image Manipulation Detection & Localization"
 authors:
-- "admin*"
-- "Xuekang Zhu*"
-- "Lei Su*"
-- "Bo Du*"
-- "Zhuohang Jiang*"
-- "Bingkui Tong*"
-- "Zeyu Lei*"
-- "Xinyu Yang*"
+- "admin\*"
+- "Xuekang Zhu\*"
+- "Lei Su\*"
+- "Bo Du\*"
+- "Zhuohang Jiang\*"
+- "Bingkui Tong\*"
+- "Zeyu Lei\*"
+- "Xinyu Yang\*"
 - Chi-Man Pun
 - Jiancheng Lv
 - Jizhe Zhou
