@@ -227,7 +227,7 @@ sections:
       title: Publications 
       text: |-
         {{% callout note %}}
-         Note: "*" for equal contribution. [Click here for detaild information](./publication/).
+         [Click here for detaild information](./publication/).
         {{% /callout %}}
       filters:
         folders:

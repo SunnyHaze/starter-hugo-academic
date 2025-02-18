@@ -5,7 +5,7 @@ authors:
 - Bo Du
 - Zhuohang Jiang
 - Ahmed Y. Al Hammadi
-- Jizhe Zhou*
+- Jizhe Zhou
 - 
 date: "2023-12-01"
 doi: ""
