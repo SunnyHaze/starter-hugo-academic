@@ -40,7 +40,7 @@ featured: false
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2406.10580
-- name: NeurIPS URL
+- name: 'NeurIPS URL'
   url: https://proceedings.neurips.cc/paper_files/paper/2024/hash/f280a398c243b5fdaa09f57ece880fc9-Abstract-Datasets_and_Benchmarks_Track.html 
 url_pdf: https://arxiv.org/pdf/2406.10580.pdf
 url_code: 'https://github.com/scu-zjz/IMDLBenCo'

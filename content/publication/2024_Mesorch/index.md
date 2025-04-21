@@ -1,15 +1,19 @@
 ---
-title: "Can We Get Rid of Handcrafted Feature Extractors? SparseViT: Nonsemantics-Centered, Parameter-Efficient Image Manipulation Localization Through Spare-Coding Transformer"
+title: "Mesoscopic insights: Orchestrating multi-scale & hybrid architecture for image manipulation localization"
 authors:
-- Lei Su
-- admin
 - Xuekang Zhu
-- Chaoqun Niu
+- admin
+- Lei Su
+- Zhuohang Jiang
+- Bo Du
+- Xiwen Wang
 - Zeyu Lei
+- Wentao Feng
+- Chi-Man Pun
 - Ji-zhe Zhou
 
 date: "2024-12-19"
-doi: ""
+doi: "https://doi.org/10.1609/aaai.v39i10.33198"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2024-12-19T03:42:22.405780Z"
@@ -23,7 +27,7 @@ publication_types: ["article"]
 publication: "**The 39th Annual AAAI Conference on Artificial Intelligence**"
 publication_short: "**AAAI'25**"
 
-abstract: "Non-semantic features or semantic-agnostic features, which are irrelevant to image context but sensitive to image manipulations, are recognized as evidential to Image Manipulation Localization (IML). Since manual labels are impossible, existing works rely on handcrafted methods to extract non-semantic features. Handcrafted non-semantic features jeopardize IML model's generalization ability in unseen or complex scenarios. Therefore, for IML, the elephant in the room is: How to adaptively extract non-semantic features? Non-semantic features are context-irrelevant and manipulation-sensitive. That is, within an image, they are consistent across patches unless manipulation occurs. Then, spare and discrete interactions among image patches are sufficient for extracting non-semantic features. However, image semantics vary drastically on different patches, requiring dense and continuous interactions among image patches for learning semantic representations. Hence, in this paper, we propose a Sparse Vision Transformer (SparseViT), which reformulates the dense, global self-attention in ViT into a sparse, discrete manner. Such sparse self-attention breaks image semantics and forces SparseViT to adaptively extract non-semantic features for images. Besides, compared with existing IML models, the sparse self-attention mechanism largely reduced the model size (max 80% in FLOPs), achieving stunning parameter efficiency and computation reduction. Extensive experiments demonstrate that, without any handcrafted feature extractors, SparseViT is superior in both generalization and efficiency across benchmark datasets. Code: https://github.com/scu-zjz/SparseViT"
+abstract: "The mesoscopic level serves as a bridge between the macroscopic and microscopic worlds, addressing gaps overlooked by both. Image manipulation localization (IML), a crucial technique to pursue truth from fake images, has long relied on low-level (microscopic-level) traces. However, in practice, most tampering aims to deceive the audience by altering image semantics. As a result, manipulation commonly occurs at the object level (macroscopic level), which is equally important as microscopic traces. Therefore, integrating these two levels into the mesoscopic level presents a new perspective for IML research. Inspired by this, our paper explores how to simultaneously construct mesoscopic representations of micro and macro information for IML  and introduces the Mesorch architecture to orchestrate both. Specifically, this architecture i) combines Transformers and CNNs in parallel, with Transformers extracting macro information and CNNs capturing micro details, and ii) explores across different scales, assessing micro and macro information seamlessly. Additionally, based on the Mesorch architecture, the paper introduces two baseline models aimed at solving IML tasks through mesoscopic representation. Extensive experiments across four datasets have demonstrated that our models surpass the current state-of-the-art in terms of performance, computational complexity, and robustness."
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
@@ -34,9 +38,11 @@ featured: false
 
 links:
 - name: arXiv
-  url: https://arxiv.org/abs/2412.14598
-url_pdf: https://arxiv.org/pdf/2412.14598
-url_code: 'https://github.com/scu-zjz/SparseViT'
+  url: https://arxiv.org/abs/2412.13753
+- name: "AAAI URL"
+  url: https://ojs.aaai.org/index.php/AAAI/article/view/33198
+url_pdf: https://ojs.aaai.org/index.php/AAAI/article/view/33198/35353
+url_code: 'https://github.com/scu-zjz/Mesorch'
 # url_dataset: '#'
 # url_poster: 'https://neurips.cc/media/PosterPDFs/NeurIPS%202024/97594.png?t=1731354740.441627'
 # url_project: ''
