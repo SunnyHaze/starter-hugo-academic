@@ -57,7 +57,7 @@ Previous his PhD, he served as a  Research Assistant at [Sichuan University](htt
 
 Before that, Xiaochen earned his B.E. in Computer Science from the College of Computer Science at Sichuan University in June 2023, where he was awarded for his outstanding undergraduate thesis, ranking in the top 2 out of over 400 students.
 
-He enjoys embracing the open-source community and has currently garnered 300+ stars in all of his repositories on  {{< icon name="github" pack="fab" >}}[GitHub](https://github.com/SunnyHaze).
+He enjoys embracing the open-source community and has currently garnered 500+ stars in all of his repositories on  {{< icon name="github" pack="fab" >}}[GitHub](https://github.com/SunnyHaze).
 
 His current research interest lies in Computer Vision, Image Segmentation, and Image Forensics, especially image manipulation localization. He is looking for an opportunity to develop a fundamental paradigm for image segmentation with large models.
 
