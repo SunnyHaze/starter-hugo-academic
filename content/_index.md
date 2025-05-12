@@ -76,7 +76,13 @@ sections:
           location: United Arab Emirates
           date_start: '2024-08-15'
           date_end: ''
-
+        - title: Full-time Research Assistant
+          company: Peking University
+          company_url: 'https://pku.edu.cn'
+          company_logo: pku.png
+          location: China
+          date_start: '2025-01-01'
+          date_end: ''
         - title: Full-time Research Assistant
           company: Sichuan University
           company_url: 'https://scu.edu.cn'
