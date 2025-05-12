@@ -79,7 +79,7 @@ sections:
         - title: Full-time Research Assistant
           company: Peking University
           company_url: 'https://pku.edu.cn'
-          company_logo: pku.png
+          company_logo: pku
           location: China
           date_start: '2025-01-01'
           date_end: ''
