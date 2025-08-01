@@ -49,8 +49,7 @@ highlight_name: true
 first_name: Xiaochen
 email: xiaochen.ma.cs@gmail.com
 ---
-Xiaochen Ma (马晓晨) is a Ph.D student in Computer vision at [MBZUAI](https://mbzuai.ac.ae/), UAE, under the mentorship of Prof. [Zhiqiang Shen](https://zhiqiangshen.com/). 
-He is currently taking a one-year leave from MBZUAI and working as a Research Assistant at Peking University, where he is conducting research on Large Language Models (LLMs) and Multimodal LLMs (MLLMs) under the guidance of Prof. [Wentao Zhang](https://zwt233.github.io/). 
+Xiaochen Ma (马晓晨), He is currently working as a Research Assistant at Peking University, where he is conducting research on Large Language Models (LLMs) and Multimodal LLMs (MLLMs) under the guidance of Prof. [Wentao Zhang](https://zwt233.github.io/). 
 Previous his PhD, he served as a  Research Assistant at [Sichuan University](https://scu.edu.cn/), China, from July 2023 to June 2024,  guided by Prof. [Jizhe Zhou](https://Knightzjz.github.io). 
 Before that, Xiaochen earned his B.E. in Computer Science from the College of Computer Science at Sichuan University in June 2023, where he was awarded for his outstanding undergraduate thesis, ranking in the top 2 out of over 400 students.
 
