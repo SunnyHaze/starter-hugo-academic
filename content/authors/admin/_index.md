@@ -1,6 +1,6 @@
 ---
 title: Xiaochen Ma
-role: Ph.D Student
+role: Research Assistant
 avatar_filename: avatar.jpg
 bio: My research interests include Computer Vision, Image Forensic, Image
   manipulation detection.
@@ -31,13 +31,13 @@ social:
     icon_pack: ai
     link: uploads/resume.pdf
 organizations:
-  - name: MBZUAI, United Arab Emirates
-    url: https://mbzuai.ac.ae/
+  - name: Peking Univeristy
+    # url: https://mbzuai.ac.ae/
 education:
   courses:
-    - course: Ph.D in Computer Vision
-      institution: MBZUAI
-      year: 2028 (expected)
+    # - course: Ph.D in Computer Vision
+    #   institution: MBZUAI
+    #   year: 2028 (expected)
     - course: B.Eng. in Computer Science
       institution: Sichuan University
       year: 2023
