@@ -32,6 +32,7 @@ social:
     link: uploads/resume.pdf
 organizations:
   - name: Peking Univeristy
+  - url: https://www.pku.edu.cn/
     # url: https://mbzuai.ac.ae/
 education:
   courses:
