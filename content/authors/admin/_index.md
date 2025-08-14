@@ -58,7 +58,7 @@ He enjoys embracing the open-source community and has currently garnered 500+ st
 His current research interest lies in Computer Vision, Image Segmentation, and Image Forensics, especially image manipulation localization. He is looking for an opportunity to develop a fundamental paradigm for image segmentation with large models.
 
 ### Services:
-Program Committee: AAAI'25
-Reviewer: NeurIPS'25, ICCV'25, ICML'25, CVPR'25, ICLR'25, NeurIPS'24, and ACM MM'24, AISTATS'25.
+- Program Committee: AAAI'25
+- Reviewer: NeurIPS'25, ICCV'25, ICML'25, CVPR'25, ICLR'25, NeurIPS'24, and ACM MM'24, AISTATS'25.
 
 {style="text-align: justify;"}
