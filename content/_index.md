@@ -293,7 +293,7 @@ sections:
         street: 
         city: Beijing
         # region: 
-        # postcode: PO.Box 7909
+        postcode: 100089
         country: China
         # country_code: US
       directions: 3F, Huihuang Shidai Building, 56 West Road of North Fourth Ring, Haidian District, Beijing, China
