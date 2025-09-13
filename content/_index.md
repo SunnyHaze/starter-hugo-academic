@@ -286,17 +286,17 @@ sections:
       # text: |-
         # Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: xiaochen.ma.cs[at]gmail.com or Xiaochen.Ma[at]mbzuai.ac.ae
+      email: xiaochen.ma.cs[at]gmail.com
       # phone: 888 888 88 88
       # appointment_url: 'https://calendly.com'
       address:
-        street: Masdar City
-        city: Abu Dhabi
+        street: 
+        city: Beijing
         # region: 
-        postcode: PO.Box 7909
-        country: United Arab Emirates
+        # postcode: PO.Box 7909
+        country: China
         # country_code: US
-      directions: Building 1B, Mohamed Bin Zayed University of Artificial Intelligence
+      directions: 3F, Huihuang Shidai Building, 56 West Road of North Fourth Ring, Haidian District, Beijing, China
       # office_hours:
       #   - 'Monday 10:00 to 13:00'
       #   - 'Wednesday 09:00 to 10:00'
