@@ -60,6 +60,6 @@ His current research interest lies in Computer Vision, Image Segmentation, and I
 
 ### Services:
 - Program Committee: AAAI'25
-- Reviewer: ICLR'26, AISTATS'26, NeurIPS'25, ICCV'25, ICML'25, CVPR'25, ICLR'25, NeurIPS'24, and ACM MM'24, AISTATS'25.
+- Reviewer: CVPR'26, ICLR'26, AISTATS'26, NeurIPS'25, ICCV'25, ICML'25, CVPR'25, ICLR'25, NeurIPS'24, and ACM MM'24, AISTATS'25.
 
 {style="text-align: justify;"}
