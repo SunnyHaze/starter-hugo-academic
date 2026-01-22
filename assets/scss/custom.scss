@@ -1,0 +1,7 @@
+/* Make Shields.io badges inline (keep normal images unchanged) */
+.article-style img[src*="shields.io"],
+.article-style a img[src*="shields.io"] {
+  display: inline !important;
+  vertical-align: middle;
+  margin: 0 0.15em;
+}
