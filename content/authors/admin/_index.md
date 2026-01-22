@@ -50,13 +50,48 @@ highlight_name: true
 first_name: Xiaochen
 email: xiaochen.ma.cs@gmail.com
 ---
-Xiaochen Ma (马晓晨), He is currently working as a Research Assistant at Peking University, where he is conducting research on Large Language Models (LLMs) and Multimodal LLMs (MLLMs) under the guidance of Prof. [Wentao Zhang](https://zwt233.github.io/). 
-Previous his PhD, he served as a  Research Assistant at [Sichuan University](https://scu.edu.cn/), China, from July 2023 to June 2024,  guided by Prof. [Jizhe Zhou](https://Knightzjz.github.io). 
-Before that, Xiaochen earned his B.E. in Computer Science from the College of Computer Science at Sichuan University in June 2023, where he was awarded for his [outstanding undergraduate thesis](https://cs.scu.edu.cn/info/1260/18861.htm), ranking in the top 2 out of over 400 students.
 
-He enjoys embracing the open-source community and has currently garnered 500+ stars in all of his repositories on  {{< icon name="github" pack="fab" >}}[GitHub](https://github.com/SunnyHaze).
 
-His current research interest lies in Computer Vision, Image Segmentation, and Image Forensics, especially image manipulation localization. He is looking for an opportunity to develop a fundamental paradigm for image segmentation with large models.
+## Xiaochen Ma (马晓晨)
+
+Xiaochen Ma (马晓晨) is a Ph.D. student in **Computer Science and Engineering (CSE)** at the **Hong Kong University of Science and Technology (HKUST)** since **January 2026**, advised by **Prof. Binhang Yuan** and **Prof. Wentao Zhang**.
+
+Prior to his Ph.D. studies, he worked as a **Research Assistant at Peking University**, where he conducted research on **Large Language Models (LLMs)** and **Multimodal Large Language Models (MLLMs)** under the supervision of Prof. [Wentao Zhang](https://zwt233.github.io/).
+Previously, from **July 2023 to June 2024**, he served as a **Research Assistant at Sichuan University**, advised by Prof. [Jizhe Zhou](https://Knightzjz.github.io).
+
+Xiaochen received his **B.Eng. in Computer Science** from the **College of Computer Science, Sichuan University** in **June 2023**, where his undergraduate thesis was awarded as an **Outstanding Undergraduate Thesis**, ranking **top 2 out of over 400 students**.
+
+He actively embraces the open-source community, with his repositories accumulating **3000+ GitHub stars** in total on
+{{< icon name="github" pack="fab" >}} [GitHub](https://github.com/SunnyHaze).
+
+---
+
+### Research Interests
+
+His research focuses on:
+
+* **LLM Systems and Deep Learning Systems**
+* **System design and optimization for large-scale deep learning**
+* **Image Forensics and Image Manipulation Detection**
+* **Multimodal Large Models (MLLMs)**
+
+In particular, his current research **primarily targets LLM systems and traditional Deep Learning system design**, while also exploring multimodal foundation models.
+
+---
+
+### Representative Works
+
+* **DataFlow**
+  A flexible and efficient dataflow system for deep learning research and deployment.
+  {{< icon name="github" pack="fab" >}} [https://github.com/OpenDCAI/DataFlow](https://github.com/OpenDCAI/DataFlow)
+  ⭐ **2.6k GitHub stars** [![](https://img.shields.io/github/stars/OpenDCAI/DataFlow?style=social)](https://github.com/OpenDCAI/DataFlow)
+
+* **IMDLBenCo**
+  A unified **training and evaluation system for image manipulation detection and localization**, designed to benchmark and standardize IMDL research.
+  {{< icon name="github" pack="fab" >}} [https://github.com/scu-zjz/IMDLBenCo](https://github.com/scu-zjz/IMDLBenCo)
+  **NeurIPS 2024 Spotlight** · ⭐ **280 GitHub stars** [![](https://img.shields.io/github/stars/OpenDCAI/DataFlow?style=social)](https://github.com/OpenDCAI/DataFlow)
+
+---
 
 ### Services:
 - Program Committee: AAAI'25
