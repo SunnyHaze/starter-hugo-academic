@@ -1,6 +1,6 @@
 ---
 title: Xiaochen Ma
-role: Research Assistant
+role: PhD Student of CSE
 avatar_filename: avatar.jpg
 bio: My research interests include Computer Vision, Image Forensic, Image
   manipulation detection.
@@ -31,14 +31,14 @@ social:
     icon_pack: ai
     link: uploads/resume.pdf
 organizations:
-  - name: Peking Univeristy
-  - url: https://www.pku.edu.cn/
+  - name: HKUST
+  - url: https://hkust.edu.hk/
     # url: https://mbzuai.ac.ae/
 education:
   courses:
-    # - course: Ph.D in Computer Vision
-    #   institution: MBZUAI
-    #   year: 2028 (expected)
+    - course: Ph.D in Computer Science and Engineering
+      institution: HKUST
+      year: 2028 (expected)
     - course: B.Eng. in Computer Science
       institution: Sichuan University
       year: 2023
@@ -54,7 +54,7 @@ email: xiaochen.ma.cs@gmail.com
 
 ## Xiaochen Ma (马晓晨)
 
-Xiaochen Ma (马晓晨) is a Ph.D. student in Computer Science and Engineering (CSE) at the Hong Kong University of Science and Technology (HKUST) since January 2026, advised by Prof. Binhang Yuan and Prof. Wentao Zhang.
+Xiaochen Ma (马晓晨) is a Ph.D. student in Computer Science and Engineering (CSE) at the Hong Kong University of Science and Technology (HKUST) since January 2026, advised by Prof. [Binhang Yuan](https://binhangyuan.github.io/site/) and Prof. [Wentao Zhang](https://zwt233.github.io/).
 
 Prior to his Ph.D. studies, he worked as a Research Assistant at Peking University, where he conducted research on Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) under the supervision of Prof. [Wentao Zhang](https://zwt233.github.io/).
 
