@@ -54,12 +54,13 @@ email: xiaochen.ma.cs@gmail.com
 
 ## Xiaochen Ma (马晓晨)
 
-Xiaochen Ma (马晓晨) is a Ph.D. student in **Computer Science and Engineering (CSE)** at the **Hong Kong University of Science and Technology (HKUST)** since **January 2026**, advised by **Prof. Binhang Yuan** and **Prof. Wentao Zhang**.
+Xiaochen Ma (马晓晨) is a Ph.D. student in Computer Science and Engineering (CSE) at the Hong Kong University of Science and Technology (HKUST) since January 2026, advised by Prof. Binhang Yuan and Prof. Wentao Zhang.
 
-Prior to his Ph.D. studies, he worked as a **Research Assistant at Peking University**, where he conducted research on **Large Language Models (LLMs)** and **Multimodal Large Language Models (MLLMs)** under the supervision of Prof. [Wentao Zhang](https://zwt233.github.io/).
-Previously, from **July 2023 to June 2024**, he served as a **Research Assistant at Sichuan University**, advised by Prof. [Jizhe Zhou](https://Knightzjz.github.io).
+Prior to his Ph.D. studies, he worked as a Research Assistant at Peking University, where he conducted research on Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) under the supervision of Prof. [Wentao Zhang](https://zwt233.github.io/).
 
-Xiaochen received his **B.Eng. in Computer Science** from the **College of Computer Science, Sichuan University** in **June 2023**, where his undergraduate thesis was awarded as an **Outstanding Undergraduate Thesis**, ranking **top 2 out of over 400 students**.
+Previously, from July 2023 to June 2024, he served as a Research Assistant at Sichuan University, advised by Prof. [Jizhe Zhou](https://Knightzjz.github.io).
+
+Xiaochen received his B.Eng. in Computer Science from the College of Computer Science, Sichuan University in June 2023, where his undergraduate thesis was awarded as an Outstanding Undergraduate Thesis, ranking top 2 out of over 400 students.
 
 He actively embraces the open-source community, with his repositories accumulating **3000+ GitHub stars** in total on
 {{< icon name="github" pack="fab" >}} [GitHub](https://github.com/SunnyHaze).
@@ -84,17 +85,16 @@ In particular, his current research **primarily targets LLM systems and traditio
 * **DataFlow**
   A flexible and efficient dataflow system for deep learning research and deployment.
   {{< icon name="github" pack="fab" >}} [https://github.com/OpenDCAI/DataFlow](https://github.com/OpenDCAI/DataFlow)
-  ⭐ **2.6k GitHub stars** [![](https://img.shields.io/github/stars/OpenDCAI/DataFlow?style=social)](https://github.com/OpenDCAI/DataFlow)
+  ⭐ **2.6k+ GitHub stars** 
 
 * **IMDLBenCo**
   A unified **training and evaluation system for image manipulation detection and localization**, designed to benchmark and standardize IMDL research.
   {{< icon name="github" pack="fab" >}} [https://github.com/scu-zjz/IMDLBenCo](https://github.com/scu-zjz/IMDLBenCo)
-  **NeurIPS 2024 Spotlight** · ⭐ **280 GitHub stars** [![](https://img.shields.io/github/stars/OpenDCAI/DataFlow?style=social)](https://github.com/OpenDCAI/DataFlow)
+  **NeurIPS 2024 Spotlight** · ⭐ **280+ GitHub stars**
 
 ---
 
 ### Services:
-- Program Committee: AAAI'25
-- Reviewer: CVPR'26, ICLR'26, AISTATS'26, NeurIPS'25, ICCV'25, ICML'25, CVPR'25, ICLR'25, NeurIPS'24, and ACM MM'24, AISTATS'25.
+- Reviewer: CVPR'26, ICLR'26, AISTATS'26, AAAI'25, NeurIPS'25, ICCV'25, ICML'25, CVPR'25, ICLR'25, NeurIPS'24, and ACM MM'24, AISTATS'25.
 
 {style="text-align: justify;"}
