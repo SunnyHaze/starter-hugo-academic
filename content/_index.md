@@ -286,7 +286,7 @@ sections:
       # text: |-
         # Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: xiaochen.ma.cs[at]gmail.com OR xiaochen.ma@connect.ust.hk
+      email: xiaochen.ma.cs[at]gmail.com OR xiaochen.ma[at]connect.ust.hk
       # phone: 888 888 88 88
       # appointment_url: 'https://calendly.com'
       address:
