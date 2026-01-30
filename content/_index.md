@@ -296,7 +296,7 @@ sections:
         # postcode: 100089
         country: China
         # country_code: US
-      directions: The Hong Kong University of Science and Technology, Clear Water Bay
+      directions: The Hong Kong University of Science and Technology, Clear Water Bay, Kowloon, Hong Kong
       # office_hours:
       #   - 'Monday 10:00 to 13:00'
       #   - 'Wednesday 09:00 to 10:00'
