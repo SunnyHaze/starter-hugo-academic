@@ -286,17 +286,17 @@ sections:
       # text: |-
         # Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: xiaochen.ma.cs[at]gmail.com
+      email: xiaochen.ma.cs[at]gmail.com OR xiaochen.ma@connect.ust.hk
       # phone: 888 888 88 88
       # appointment_url: 'https://calendly.com'
       address:
-        street: 
-        city: Beijing
+        street: Kowloon
+        city: Hong Kong SAR
         # region: 
-        postcode: 100089
+        # postcode: 100089
         country: China
         # country_code: US
-      directions: 3F, Huihuang Shidai Building, 56 West Road of North Fourth Ring, Haidian District, Beijing, China
+      directions: The Hong Kong University of Science and Technology, Clear Water Bay
       # office_hours:
       #   - 'Monday 10:00 to 13:00'
       #   - 'Wednesday 09:00 to 10:00'
