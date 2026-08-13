@@ -69,6 +69,14 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: Research Intern (Qingyun Program)
+          company: Tencent Hunyuan, Foundation Model Department
+          company_url: 'https://hy.tencent.com/'
+          company_logo: hunyuan
+          location: Beijing, China
+          date_start: '2026-06-24'
+          date_end: ''
+          track: experience
         - title: PhD Student in Computer Science and Engineering
           company: The Hong Kong University of Science and Technology
           company_url: 'https://hkust.edu.hk/'
@@ -76,6 +84,7 @@ sections:
           location: Hong Kong SAR, China
           date_start: '2026-02-22'
           date_end: ''
+          track: education
         - title: Full-time Research Assistant
           company: Peking University
           company_url: 'https://pku.edu.cn'
@@ -83,6 +92,7 @@ sections:
           location: China
           date_start: '2025-01-01'
           date_end: '2026-01-30'
+          track: experience
         - title: Full-time Research Assistant
           company: Sichuan University
           company_url: 'https://scu.edu.cn'
@@ -90,20 +100,13 @@ sections:
           location: China
           date_start: '2023-07-01'
           date_end: '2024-06-30'
+          track: experience
           # description: |2-
           #     Responsibilities include:
 
           #     * Analysing
           #     * Modelling
           #     * Deploying
-
-        # - title: Undergraduate Visiting Student
-        #   company: National University of Singapore
-        #   company_url: 'https://www.nus.edu.sg'
-        #   company_logo: nus
-        #   location: Singapore
-        #   date_start: '2022-06-01'
-        #   date_end: '2022-07-01'
 
         - title: Undergraduate Student
           company: Sichuan University
@@ -112,9 +115,11 @@ sections:
           location: China
           date_start: '2019-09-01'
           date_end: '2023-06-01'
+          track: education
           # description: Taught electronic engineering and researched semiconductor physics.
     design:
-      columns: '2'
+      columns: '1'
+      css_class: career-timeline-section
   # - block: accomplishments
   #   content:
   #     # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
@@ -227,18 +232,12 @@ sections:
   #   design:
   #     columns: '2'
   #     view: card
-  - block: collection
+  - block: publication_showcase
     id: publications
     content:
-      title: Publications 
-      text: |-
-        {{% callout note %}}
-         [Click here for detaild information](./publication/).
-        {{% /callout %}}
-      filters:
-        folders:
-          - publication
-        exclude_featured: False
+      title: Selected Publications
+      count: 4
+      scholar_url: https://scholar.google.com/citations?user=hGEIyCEAAAAJ
     design:
       columns: '2'
       view: citation

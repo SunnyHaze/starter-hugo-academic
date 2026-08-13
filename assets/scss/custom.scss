@@ -1,7 +1,413 @@
-/* Make Shields.io badges inline (keep normal images unchanged) */
-.article-style img[src*="shields.io"],
-.article-style a img[src*="shields.io"] {
-  display: inline !important;
+/* Inline images emitted by our Markdown render hook (badges by default). */
+.article-style img.inline-image {
+  display: inline-block !important;
+  width: auto !important;
+  max-width: none !important;
+  height: auto;
+  margin: 0 0.15em !important;
   vertical-align: middle;
-  margin: 0 0.15em;
+}
+
+.article-style img.inline-badge {
+  height: 20px;
+}
+
+/* Labelled profile links, including the weekly-updated Scholar citation count. */
+#profile .profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-top: 1.25rem;
+}
+
+#profile .profile-actions li {
+  display: block;
+  margin: 0;
+}
+
+#profile .profile-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  min-height: 2.2rem;
+  padding: 0.58rem 0.78rem;
+  border-radius: 0.48rem;
+  box-shadow: 0 0.25rem 0.7rem rgba(15, 23, 42, 0.12);
+  color: #fff !important;
+  font-size: 0.76rem;
+  font-weight: 650;
+  line-height: 1;
+  text-decoration: none !important;
+  transition: box-shadow 150ms ease, filter 150ms ease, transform 150ms ease;
+}
+
+#profile .profile-action:hover {
+  box-shadow: 0 0.4rem 0.9rem rgba(15, 23, 42, 0.18);
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+#profile .profile-action .big-icon {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+#profile .profile-action-github {
+  background: #24292f;
+}
+
+#profile .profile-action-scholar {
+  background: #4285f4;
+}
+
+#profile .profile-action-email {
+  background: #64748b;
+}
+
+#profile .profile-action-linkedin {
+  background: #0a66c2;
+}
+
+#profile .profile-action-cv {
+  background: #0f766e;
+}
+
+#profile .profile-action-metric {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Two-track career timeline: education on the left, research/industry on the right. */
+.career-timeline-section .section-heading {
+  margin-bottom: 2.25rem !important;
+}
+
+.career-timeline {
+  --timeline-gap: 64px;
+  --education-color: #2563eb;
+  --experience-color: #0f766e;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.career-timeline-head,
+.career-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--timeline-gap) minmax(0, 1fr);
+}
+
+.career-timeline-head {
+  align-items: end;
+  margin-bottom: 1.25rem;
+}
+
+.career-track-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.career-track-education {
+  align-items: flex-end;
+  color: var(--education-color);
+  text-align: right;
+}
+
+.career-track-experience {
+  align-items: flex-start;
+  color: var(--experience-color);
+  text-align: left;
+}
+
+.career-track-kicker {
+  margin-bottom: 0.15rem;
+  color: var(--bs-secondary-color, #6c757d);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.career-timeline-body {
+  position: relative;
+}
+
+.career-timeline-body::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(180deg, var(--education-color), var(--experience-color));
+  content: '';
+  opacity: 0.35;
+  transform: translateX(-50%);
+}
+
+.career-entry {
+  position: relative;
+  align-items: start;
+  margin-bottom: 1.25rem;
+}
+
+.career-entry:last-child {
+  margin-bottom: 0;
+}
+
+.career-entry-education .career-card {
+  grid-column: 1;
+  border-top: 3px solid var(--education-color);
+}
+
+.career-entry-experience .career-card {
+  grid-column: 3;
+  border-top: 3px solid var(--experience-color);
+}
+
+.career-node {
+  z-index: 1;
+  grid-column: 2;
+  grid-row: 1;
+  width: 13px;
+  height: 13px;
+  margin: 1.35rem auto 0;
+  border: 3px solid var(--education-color);
+  border-radius: 50%;
+  background: var(--bs-body-bg, #fff);
+  box-shadow: 0 0 0 5px var(--bs-body-bg, #fff);
+}
+
+.career-entry-experience .career-node {
+  border-color: var(--experience-color);
+}
+
+.career-card {
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0.35rem 1.2rem rgba(15, 23, 42, 0.08);
+}
+
+.career-card .card-body {
+  padding: 1.1rem 1.2rem;
+}
+
+.career-card-topline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.career-kind {
+  color: var(--education-color);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.career-entry-experience .career-kind {
+  color: var(--experience-color);
+}
+
+.career-date,
+.career-location {
+  color: #6c757d;
+  font-size: 0.78rem;
+}
+
+.career-card-main {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.career-logo {
+  flex: 0 0 48px;
+}
+
+.career-logo img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.career-copy {
+  min-width: 0;
+}
+
+.career-title {
+  margin: 0 0 0.15rem;
+  color: inherit;
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+
+.career-company {
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.career-location {
+  margin-top: 0.18rem;
+}
+
+.career-description {
+  margin-top: 0.85rem;
+  font-size: 0.85rem;
+}
+
+.career-description > :last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .career-timeline-section .section-heading {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .career-timeline-head {
+    display: none;
+  }
+
+  .career-timeline-body::before {
+    left: 8px;
+    transform: none;
+  }
+
+  .career-entry {
+    display: block;
+    padding-left: 36px;
+  }
+
+  .career-node {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 13px;
+    height: 13px;
+    margin-top: 1.35rem;
+  }
+
+  .career-card-topline {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
+
+// Selected publications: keep navigation visually separate from the paper list.
+.publication-showcase-aside h1 {
+  margin: 0;
+}
+
+.publication-access-card {
+  max-width: 18rem;
+  margin-top: 1.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.11);
+  border-radius: 0.8rem;
+  background: #fff;
+  box-shadow: 0 0.45rem 1.4rem rgba(15, 23, 42, 0.06);
+}
+
+.publication-access-label {
+  padding: 0.75rem 0.9rem 0.55rem;
+  color: #7a8492;
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.publication-access-link {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.72rem 0.9rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.07);
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: background-color 150ms ease;
+}
+
+.publication-access-link:hover {
+  background: #f7f9fc;
+}
+
+.publication-access-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.48rem;
+  background: #eef4fb;
+  color: #1565c0;
+  font-size: 0.82rem;
+}
+
+.publication-access-icon-scholar {
+  background: #eef4ff;
+  color: #4285f4;
+  font-size: 1rem;
+}
+
+.publication-access-copy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.16rem;
+}
+
+.publication-access-copy strong {
+  font-size: 0.84rem;
+  line-height: 1.2;
+}
+
+.publication-access-copy small {
+  color: #7a8492;
+  font-size: 0.7rem;
+  line-height: 1.25;
+}
+
+.publication-access-arrow {
+  color: #a4acb7;
+  font-size: 0.62rem;
+}
+
+.dark .publication-access-card {
+  border-color: rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.035);
+  box-shadow: none;
+}
+
+.dark .publication-access-link {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .publication-access-link:hover {
+  background: rgba(255, 255, 255, 0.055);
+}
+
+@media (max-width: 991.98px) {
+  .publication-showcase-aside {
+    margin-bottom: 1.75rem;
+  }
+
+  .publication-showcase-aside h1 {
+    text-align: center;
+  }
+
+  .publication-access-card {
+    max-width: 32rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

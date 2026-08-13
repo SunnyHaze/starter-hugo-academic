@@ -1,0 +1,57 @@
+{{/* Local publication showcase: weighted highlights with a separate navigation card. */}}
+
+{{ $block := .wcBlock }}
+{{ $items_count := $block.content.count | default 4 }}
+{{/* Publications stay English-only and are shared by every language homepage. */}}
+{{ $publication_site := site }}
+{{ if ne site.Language.Lang "en" }}
+  {{ range site.Sites }}
+    {{ if eq .Language.Lang "en" }}{{ $publication_site = . }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ $query := where $publication_site.RegularPages "Section" "publication" }}
+{{ $query = where $query "Params.featured" "==" true }}
+{{ $query = sort $query "Params.homepage_weight" "asc" }}
+{{ $query = first $items_count $query }}
+{{ $archive_page := $publication_site.GetPage "Section" "publication" }}
+
+<div class="row publication-showcase">
+  <aside class="col-12 col-lg-4 publication-showcase-aside">
+    <h1>{{ $block.content.title | markdownify | emojify }}</h1>
+
+    <nav class="publication-access-card" aria-label="{{ i18n "publications_browse_aria" | default "Browse more publications" }}">
+      <div class="publication-access-label">{{ i18n "publications_browse_label" | default "Explore more" }}</div>
+
+      <a class="publication-access-link" href="{{ $archive_page.RelPermalink }}">
+        <span class="publication-access-icon" aria-hidden="true">
+          <i class="fas fa-book-open"></i>
+        </span>
+        <span class="publication-access-copy">
+          <strong>{{ i18n "publications_all" | default "All publications" }}</strong>
+          <small>{{ i18n "publications_all_description" | default "Browse the complete list" }}</small>
+        </span>
+        <i class="fas fa-chevron-right publication-access-arrow" aria-hidden="true"></i>
+      </a>
+
+      <a class="publication-access-link"
+         href="{{ $block.content.scholar_url }}"
+         target="_blank"
+         rel="noopener noreferrer">
+        <span class="publication-access-icon publication-access-icon-scholar" aria-hidden="true">
+          <i class="ai ai-google-scholar"></i>
+        </span>
+        <span class="publication-access-copy">
+          <strong>Google Scholar</strong>
+          <small>{{ i18n "publications_scholar_description" | default "View citations and all work" }}</small>
+        </span>
+        <i class="fas fa-external-link-alt publication-access-arrow" aria-hidden="true"></i>
+      </a>
+    </nav>
+  </aside>
+
+  <div class="col-12 col-lg-8 publication-showcase-list">
+    {{ range $index, $item := $query }}
+      {{ partial "functions/render_view" (dict "page" $block "item" . "view" ($block.design.view | default "citation") "index" $index) }}
+    {{ end }}
+  </div>
+</div>

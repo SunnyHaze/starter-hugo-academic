@@ -1,0 +1,20 @@
+- id: career_academic
+  translation: Academic
+- id: career_education
+  translation: Education
+- id: career_professional
+  translation: Professional
+- id: career_research_industry
+  translation: Research & Industry
+- id: career_timeline_aria
+  translation: Education and professional experience timeline
+- id: publications_browse_label
+  translation: Explore more
+- id: publications_browse_aria
+  translation: Browse more publications
+- id: publications_all
+  translation: All publications
+- id: publications_all_description
+  translation: Browse the complete list
+- id: publications_scholar_description
+  translation: View citations and all work

@@ -1,0 +1,24 @@
+# Repositories included in the homepage's aggregate GitHub star count.
+# Add or remove an `owner/repository` entry; the weekly workflow updates `stars`.
+repositories:
+  - OpenDCAI/DataFlow
+  - OpenDCAI/RayOrch
+  - OpenDCAI/Flash-MinerU
+  - scu-zjz/IMDLBenCo
+  - SunnyHaze/IML-ViT
+  - scu-zjz/ForensicHub
+  - scu-zjz/Mesorch
+  - SunnyHaze/scu-thesis-template
+  - SunnyHaze/CASIA2.0-Corrected-Groundtruth
+  - SunnyHaze/IML-Dataset-Corrections
+  - SunnyHaze/ManTraNet-Pytorch
+  - SunnyHaze/LeNet5-MNIST-Pytorch
+  - SunnyHaze/SCU_OAA-website-Captcha-training-set
+  - SunnyHaze/miSRGAN-pytorch
+  - SunnyHaze/Stanford-CS143-Compiler
+  - SunnyHaze/CIFAR10-VGG-Pytorch
+  - SunnyHaze/CMinus-Lexer-Parser
+  - SunnyHaze/PVZ_GAME_BY_EasyX
+  - SunnyHaze/SCU-Captcha
+stars: 8700
+updated: 2026-08-14

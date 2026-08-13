@@ -39,6 +39,7 @@ tags: []
 
 # Display this page in the Featured widget?
 featured: true
+homepage_weight: 30
 
 # Custom links (uncomment lines below)
 links:

@@ -35,7 +35,8 @@ abstract: "A comprehensive benchmark is yet to be established in the Image Manip
 
 tags:
 # - Source Themes
-featured: false
+featured: true
+homepage_weight: 10
 
 links:
 - name: arXiv

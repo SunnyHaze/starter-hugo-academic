@@ -42,7 +42,8 @@ abstract: >
 
 tags:
 # - Source Themes
-featured: false
+featured: true
+homepage_weight: 40
 
 links:
 - name: arXiv

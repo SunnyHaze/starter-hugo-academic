@@ -1,0 +1,7 @@
+{{- $stats := site.Data.github -}}
+{{- $count := lang.FormatNumber 0 $stats.stars -}}
+{{- if eq site.Language.Lang "zh" -}}
+<strong>{{ $count }} Stars</strong>
+{{- else -}}
+<strong>{{ $count }} stars</strong>
+{{- end -}}

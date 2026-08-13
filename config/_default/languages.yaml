@@ -5,18 +5,32 @@
 # Default language
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  title: Xiaochen Ma
+  weight: 1
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+zh:
+  languageCode: zh-Hans
+  title: 马晓晨
+  weight: 2
+  params:
+    description: 马晓晨的个人学术主页
+    marketing:
+      seo:
+        description: 马晓晨的个人学术主页，研究方向包括大语言模型数据基础设施、Ray、Apache Spark 与高性能分布式系统。
+    footer:
+      copyright:
+        notice: '© {year} 马晓晨。本网站内容采用 {license} 许可。'
+  menu:
+    main:
+      - name: 首页
+        url: '#about'
+        weight: 10
+      - name: 论文
+        url: '#publications'
+        weight: 50
+      - name: 联系方式
+        url: '#contact'
+        weight: 60
+      - name: 简历
+        url: '../uploads/resume.pdf'
+        weight: 70

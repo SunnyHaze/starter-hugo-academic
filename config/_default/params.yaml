@@ -18,8 +18,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    description: 'Xiaochen Ma researches high-performance data infrastructure and distributed systems for scalable LLM data preparation.'
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: '29de7f6d4108d9b300a82f09c07f64a5'
@@ -36,7 +36,7 @@ header:
     enable: true
     align: l
     show_logo: true
-    show_language: false
+    show_language: true
     show_day_night: true
     show_search: true
     highlight_active_link: true

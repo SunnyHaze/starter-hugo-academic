@@ -16,6 +16,28 @@ Easily write technical content with plain text Markdown, LaTeX math, diagrams, R
 
 The integrated [**Wowchemy**](https://wowchemy.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
 
+## Local development on Windows
+
+The repository includes a project-local, version-pinned environment. It downloads Go 1.21.13 and Hugo Extended 0.119.0 into ignored directories, so no system-wide installation is required.
+
+Start the local preview server:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\dev.ps1
+```
+
+Include draft content or use a different port when needed:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\dev.ps1 -BuildDrafts -Port 1314
+```
+
+Create the production build in `public/`:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\build.ps1
+```
+
 - 👉 [**Get Started**](https://wowchemy.com/hugo-themes/)
 - 📚 [View the **documentation**](https://wowchemy.com/docs/)
 - 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
