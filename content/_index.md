@@ -328,4 +328,19 @@ sections:
       #     captcha: false
     design:
       columns: '2'
+
+  - block: analytics_showcase
+    id: site-analytics
+    content:
+      eyebrow: Live & privacy-friendly
+      title: Homepage activity
+      description: A lightweight, aggregate view of visits to this site. No personal profiles or advertising identifiers are used.
+      expand_label: View live overview
+      expand_hint: Visitors, page views, traffic trends, and geography
+      open_label: Open dashboard
+      frame_title: Public analytics for Xiaochen Ma's homepage
+      share_url: https://cloud.umami.is/share/L6QQJnSkovbLq4qj
+    design:
+      columns: '1'
+      css_class: analytics-showcase-section
 ---

@@ -24,7 +24,13 @@ marketing:
     google_analytics: ''
     baidu_tongji: '29de7f6d4108d9b300a82f09c07f64a5'
     google_tag_manager: ''
-    microsoft_clarity: ''  
+    microsoft_clarity: ''
+    # Public tracking ID; manage analytics at https://cloud.umami.is/.
+    # Never store an Umami API key in this repository or in frontend code.
+    umami:
+      website_id: 'f8a2218e-fec8-46f8-92e5-1ec31ff5ecc6'
+      script_url: 'https://cloud.umami.is/script.js'
+      domain: 'ma.xiaochen.world'
   verification:
     google: ''
     baidu: ''

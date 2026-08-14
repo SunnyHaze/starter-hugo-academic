@@ -1,0 +1,64 @@
+{{/* Public Umami overview, intentionally collapsed to keep the homepage lightweight. */}}
+
+{{ $block := .wcBlock }}
+{{ $share_url := $block.content.share_url }}
+
+{{ with $share_url }}
+<div class="col-12">
+  <section class="analytics-showcase" aria-labelledby="analytics-showcase-title">
+    <div class="analytics-showcase-header">
+      <div class="analytics-showcase-copy">
+        <span class="analytics-showcase-eyebrow">
+          <span class="analytics-live-dot" aria-hidden="true"></span>
+          {{ $block.content.eyebrow }}
+        </span>
+        <h2 id="analytics-showcase-title">{{ $block.content.title }}</h2>
+        <p>{{ $block.content.description }}</p>
+      </div>
+
+      <a
+        class="analytics-external-link"
+        href="{{ . }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-umami-event="conversion-click"
+        data-umami-event-channel="analytics"
+        data-umami-event-target="public-overview"
+        data-umami-event-placement="analytics-card"
+        data-umami-event-lang="{{ site.Language.Lang }}"
+      >
+        <span>{{ $block.content.open_label }}</span>
+        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <details class="analytics-disclosure">
+      <summary
+        data-umami-event="conversion-click"
+        data-umami-event-channel="analytics"
+        data-umami-event-target="embedded-overview"
+        data-umami-event-placement="analytics-card"
+        data-umami-event-lang="{{ site.Language.Lang }}"
+      >
+        <span class="analytics-summary-icon" aria-hidden="true">
+          <i class="fas fa-chart-line"></i>
+        </span>
+        <span class="analytics-summary-copy">
+          <strong>{{ $block.content.expand_label }}</strong>
+          <small>{{ $block.content.expand_hint }}</small>
+        </span>
+        <i class="fas fa-chevron-down analytics-summary-chevron" aria-hidden="true"></i>
+      </summary>
+
+      <div class="analytics-frame-shell">
+        <iframe
+          src="{{ . }}"
+          title="{{ $block.content.frame_title }}"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+    </details>
+  </section>
+</div>
+{{ end }}

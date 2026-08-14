@@ -1,0 +1,13 @@
+{{- with site.Params.marketing.analytics.umami -}}
+  {{- if and hugo.IsProduction .website_id -}}
+<script
+  defer
+  src="{{ .script_url | default "https://cloud.umami.is/script.js" }}"
+  data-website-id="{{ .website_id }}"
+  data-domains="{{ .domain }}"
+  data-do-not-track="true"
+  data-exclude-search="true"
+  data-exclude-hash="true"
+></script>
+  {{- end -}}
+{{- end -}}
