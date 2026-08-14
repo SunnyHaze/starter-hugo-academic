@@ -49,11 +49,11 @@ email: xiaochen.ma.cs@gmail.com
 
 ## Xiaochen Ma (马晓晨)
 
-I am a Ph.D. student in the Department of Computer Science and Engineering at the Hong Kong University of Science and Technology (HKUST), advised by Prof. [Binhang Yuan](https://binhangyuan.github.io/site/) and Prof. [Wentao Zhang](https://zwt233.github.io/). I am currently a Qingyun Program Research Intern with [Tencent Hunyuan's Foundation Model Department](https://hy.tencent.com/). My research focuses on LLM data infrastructure and high-performance distributed systems, particularly systems built on Ray and Apache Spark for large-scale LLM data preparation. My earlier work includes data preparation systems for data-centric AI and image forensics, especially image manipulation detection and localization.
+I am a Ph.D. student in the Department of Computer Science and Engineering at the **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Binhang Yuan](https://binhangyuan.github.io/site/) and Prof. [Wentao Zhang](https://zwt233.github.io/). I am currently a **Qingyun Program Research Intern** with [**Tencent Hunyuan's Foundation Model Department**](https://hy.tencent.com/). My research focuses on **LLM data infrastructure and high-performance distributed systems**, particularly systems built on **Ray and Apache Spark** for large-scale LLM data preparation. My earlier work includes data preparation systems for data-centric AI and image forensics, especially image manipulation detection and localization.
 
-Before starting my Ph.D., I was a Research Assistant at Peking University from January 2025 to January 2026, where I worked with Prof. [Wentao Zhang](https://zwt233.github.io/) on data preparation systems for large language models. From July 2023 to June 2024, I was a full-time Research Assistant at Sichuan University, where I worked with Prof. [Jizhe Zhou](https://knightzjz.github.io/) on image manipulation detection.
+Before starting my Ph.D., I was a Research Assistant at **Peking University** from January 2025 to January 2026, where I worked with Prof. [Wentao Zhang](https://zwt233.github.io/) on data preparation systems for large language models. From July 2023 to June 2024, I was a full-time Research Assistant at **Sichuan University**, where I worked with Prof. [Jizhe Zhou](https://knightzjz.github.io/) on image manipulation detection.
 
-I received my B.Eng. in Computer Science and Technology from the College of Computer Science at Sichuan University in June 2023. My undergraduate thesis was recognized by the university as an Outstanding Undergraduate Thesis.
+I received my B.Eng. in Computer Science and Technology from the **College of Computer Science at Sichuan University** in June 2023. My undergraduate thesis was recognized by the university as an Outstanding Undergraduate Thesis.
 
 {{< scholar-stats >}}
 
