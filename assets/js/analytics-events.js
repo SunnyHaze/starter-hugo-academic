@@ -69,12 +69,32 @@
     const frame = disclosure.querySelector('[data-analytics-frame]');
     if (!frame) return;
 
+    const status = disclosure.querySelector('[data-analytics-frame-status]');
+    const loadingCopy = disclosure.querySelector('[data-analytics-loading-copy]');
+    const fallbackCopy = disclosure.querySelector('[data-analytics-fallback-copy]');
+    let fallbackTimer;
+
+    const markLoaded = () => {
+      window.clearTimeout(fallbackTimer);
+      status?.classList.add('is-loaded');
+    };
+
+    const showFallback = () => {
+      if (!status || status.classList.contains('is-loaded')) return;
+      loadingCopy?.setAttribute('hidden', '');
+      fallbackCopy?.removeAttribute('hidden');
+      status.classList.add('is-delayed');
+    };
+
     const loadFrame = () => {
       if (disclosure.open && !frame.getAttribute('src')) {
+        status?.classList.remove('is-loaded', 'is-delayed');
         frame.setAttribute('src', frame.dataset.src);
+        fallbackTimer = window.setTimeout(showFallback, 12000);
       }
     };
 
+    frame.addEventListener('load', markLoaded);
     disclosure.addEventListener('toggle', loadFrame);
     loadFrame();
   });

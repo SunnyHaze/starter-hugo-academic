@@ -37,6 +37,23 @@ marketing:
     google: ''
     baidu: ''
 
+# Public analytics dashboard shown near the bottom of the homepage.
+# Switch only `provider` to move between the two retained implementations.
+# Umami board: https://cloud.umami.is/websites/f8a2218e-fec8-46f8-92e5-1ec31ff5ecc6
+# Looker report: https://lookerstudio.google.com/reporting/2ff428f5-3128-4143-a990-923dc375355e
+analytics_showcase:
+  provider: umami # umami | looker
+  providers:
+    umami:
+      embed_url: 'https://cloud.umami.is/share/L6QQJnSkovbLq4qj'
+      external_url: 'https://cloud.umami.is/share/L6QQJnSkovbLq4qj'
+      frame_ratio: '16 / 10'
+    looker:
+      # The embed URL becomes public only after sharing and embedding are enabled in Looker Studio.
+      embed_url: 'https://lookerstudio.google.com/embed/reporting/2ff428f5-3128-4143-a990-923dc375355e/page/YZV6F'
+      external_url: 'https://lookerstudio.google.com/reporting/2ff428f5-3128-4143-a990-923dc375355e/page/YZV6F'
+      frame_ratio: '4 / 3'
+
 # Site header
 
 header:

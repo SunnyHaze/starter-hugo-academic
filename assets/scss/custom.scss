@@ -1044,7 +1044,7 @@
   }
 }
 
-// Public analytics: a quiet footer card with an optional live Umami overview.
+// Public analytics: a provider-neutral footer card (Umami or Looker Studio).
 .analytics-showcase-section {
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -1181,6 +1181,7 @@
 }
 
 .analytics-frame-shell {
+  position: relative;
   height: 76vh;
   min-height: 34rem;
   max-height: 760px;
@@ -1189,10 +1190,63 @@
 }
 
 .analytics-frame-shell iframe {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   border: 0;
   background: #fff;
+}
+
+.analytics-frame-status {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  padding: 2rem;
+  color: #64748b;
+  font-size: 0.78rem;
+  text-align: center;
+  transition: opacity 240ms ease;
+}
+
+.analytics-frame-status.is-loaded {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.analytics-frame-status.is-delayed {
+  color: #475569;
+}
+
+.analytics-frame-spinner {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+  border: 2px solid rgba(66, 133, 244, 0.2);
+  border-top-color: #4285f4;
+  border-radius: 50%;
+  animation: analytics-frame-spin 800ms linear infinite;
+}
+
+.analytics-frame-status.is-delayed .analytics-frame-spinner {
+  display: none;
+}
+
+.analytics-showcase[data-analytics-provider="looker"] .analytics-frame-shell {
+  height: auto;
+  min-height: 38rem;
+  max-height: none;
+  aspect-ratio: var(--analytics-frame-ratio, 4 / 3);
+}
+
+@keyframes analytics-frame-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .dark .analytics-showcase {
@@ -1217,6 +1271,10 @@
   border-color: rgba(255, 255, 255, 0.09);
 }
 
+.dark .analytics-frame-status {
+  color: #9ca8b8;
+}
+
 .dark .analytics-disclosure summary:hover {
   background: rgba(255, 255, 255, 0.035);
 }
@@ -1237,11 +1295,21 @@
     height: 70vh;
     min-height: 30rem;
   }
+
+  .analytics-showcase[data-analytics-provider="looker"] .analytics-frame-shell {
+    min-height: 30rem;
+    aspect-ratio: auto;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .analytics-external-link,
-  .analytics-summary-chevron {
+  .analytics-summary-chevron,
+  .analytics-frame-status {
     transition: none;
+  }
+
+  .analytics-frame-spinner {
+    animation: none;
   }
 }

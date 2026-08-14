@@ -103,7 +103,8 @@ sections:
       expand_hint: 访客 · 浏览量 · 地域
       open_label: 完整视图
       frame_title: 马晓晨个人主页公开访问分析
-      share_url: https://cloud.umami.is/share/L6QQJnSkovbLq4qj
+      loading_label: 正在加载实时统计…
+      fallback_label: 嵌入视图加载较慢，可打开完整视图查看。
     design:
       columns: '1'
       css_class: analytics-showcase-section

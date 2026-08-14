@@ -1,11 +1,22 @@
-{{/* Public Umami overview, intentionally collapsed to keep the homepage lightweight. */}}
+{{/* Provider-neutral public analytics overview, lazy-loaded to keep the homepage light. */}}
 
-{{ $block := .wcBlock }}
-{{ $share_url := $block.content.share_url }}
+{{- $block := .wcBlock -}}
+{{- $settings := site.Params.analytics_showcase | default dict -}}
+{{- $provider := $block.content.provider | default $settings.provider | default "umami" -}}
+{{- $providers := $settings.providers | default dict -}}
+{{- $provider_config := index $providers $provider | default dict -}}
+{{- $embed_url := $block.content.embed_url | default $provider_config.embed_url -}}
+{{- $external_url := $block.content.external_url | default $provider_config.external_url | default $embed_url -}}
+{{- $frame_ratio := $block.content.frame_ratio | default $provider_config.frame_ratio | default "16 / 10" -}}
 
-{{ with $share_url }}
+{{ with $embed_url }}
 <div class="col-12">
-  <section class="analytics-showcase" aria-labelledby="analytics-showcase-title">
+  <section
+    class="analytics-showcase"
+    aria-labelledby="analytics-showcase-title"
+    data-analytics-provider="{{ $provider }}"
+    style="{{ printf "--analytics-frame-ratio: %s;" $frame_ratio | safeCSS }}"
+  >
     <div class="analytics-showcase-header">
       <div class="analytics-showcase-copy">
         <h2 id="analytics-showcase-title">
@@ -16,12 +27,12 @@
 
       <a
         class="analytics-external-link"
-        href="{{ . }}"
+        href="{{ $external_url }}"
         target="_blank"
         rel="noopener noreferrer"
         data-umami-event="conversion-click"
         data-umami-event-channel="analytics"
-        data-umami-event-target="public-overview"
+        data-umami-event-target="{{ $provider }}-public-overview"
         data-umami-event-placement="analytics-card"
         data-umami-event-lang="{{ site.Language.Lang }}"
       >
@@ -34,7 +45,7 @@
       <summary
         data-umami-event="conversion-click"
         data-umami-event-channel="analytics"
-        data-umami-event-target="embedded-overview"
+        data-umami-event-target="{{ $provider }}-embedded-overview"
         data-umami-event-placement="analytics-card"
         data-umami-event-lang="{{ site.Language.Lang }}"
       >
@@ -49,12 +60,19 @@
       </summary>
 
       <div class="analytics-frame-shell">
+        <div class="analytics-frame-status" data-analytics-frame-status role="status">
+          <span class="analytics-frame-spinner" aria-hidden="true"></span>
+          <span data-analytics-loading-copy>{{ $block.content.loading_label | default "Loading live statistics…" }}</span>
+          <span data-analytics-fallback-copy hidden>{{ $block.content.fallback_label }}</span>
+        </div>
         <iframe
           data-analytics-frame
           data-src="{{ . }}"
+          data-provider="{{ $provider }}"
           title="{{ $block.content.frame_title }}"
           loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
         ></iframe>
       </div>
     </details>

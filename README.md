@@ -38,6 +38,23 @@ Create the production build in `public/`:
 powershell -ExecutionPolicy Bypass -File .\scripts\build.ps1
 ```
 
+## Public analytics dashboard
+
+The homepage analytics card keeps both Umami and Looker Studio implementations. Switch the public dashboard by changing one value in `config/_default/params.yaml`:
+
+```yaml
+analytics_showcase:
+  provider: umami # umami | looker
+```
+
+Provider URLs and frame ratios live beside that switch under `analytics_showcase.providers`. The shared Hugo partial, lazy loading, conversion events, bilingual copy, and fallback state do not need to change when switching providers.
+
+- Manage Umami tracking and the public board at <https://cloud.umami.is/>.
+- Manage GA4 collection at <https://analytics.google.com/>.
+- Manage the Looker Studio report and its public embedding permission at <https://lookerstudio.google.com/>.
+
+Keep API keys out of this repository. The Umami website ID, GA4 measurement ID, and public report URLs are frontend identifiers and are safe to commit.
+
 - 👉 [**Get Started**](https://wowchemy.com/hugo-themes/)
 - 📚 [View the **documentation**](https://wowchemy.com/docs/)
 - 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)

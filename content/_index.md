@@ -337,7 +337,8 @@ sections:
       expand_hint: Visitors · Views · Geography
       open_label: Full view
       frame_title: Public analytics for Xiaochen Ma's homepage
-      share_url: https://cloud.umami.is/share/L6QQJnSkovbLq4qj
+      loading_label: Loading live statistics…
+      fallback_label: The embedded view is taking longer than expected. Open the full view instead.
     design:
       columns: '1'
       css_class: analytics-showcase-section
