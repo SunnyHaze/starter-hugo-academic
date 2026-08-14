@@ -1,2 +1,4 @@
+# Google Scholar blocks GitHub-hosted runners. Update this value after checking
+# the public profile rather than relying on an unreliable scraper.
 citations: 691
 updated: 2026-08-14
