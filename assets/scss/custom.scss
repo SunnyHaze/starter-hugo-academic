@@ -540,8 +540,20 @@
 }
 
 .career-description {
-  margin-top: 0.85rem;
-  font-size: 0.85rem;
+  margin-top: 0.68rem;
+  color: #7a8492;
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+.career-description strong {
+  color: #667085;
+  font-weight: 600;
+}
+
+.dark .career-description,
+.dark .career-description strong {
+  color: #a7b0bd;
 }
 
 .career-description > :last-child {
