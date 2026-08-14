@@ -36,7 +36,7 @@
 }
 
 .article-style .impact-label {
-  min-width: 7.4rem;
+  flex: 0 0 auto;
   font-size: 0.82rem;
 }
 
@@ -79,13 +79,6 @@
 
 .article-style .impact-metric strong {
   color: var(--impact-accent);
-}
-
-@media (max-width: 575.98px) {
-  .article-style .impact-label {
-    flex-basis: 100%;
-    min-width: 0;
-  }
 }
 
 /* Two-track career timeline: education on the left, research/industry on the right. */
