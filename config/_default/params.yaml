@@ -52,7 +52,7 @@ analytics_showcase:
       # The embed URL becomes public only after sharing and embedding are enabled in Looker Studio.
       embed_url: 'https://lookerstudio.google.com/embed/reporting/2ff428f5-3128-4143-a990-923dc375355e/page/YZV6F'
       external_url: 'https://lookerstudio.google.com/reporting/2ff428f5-3128-4143-a990-923dc375355e/page/YZV6F'
-      frame_ratio: '4 / 3'
+      frame_ratio: '5 / 3'
 
 # Site header
 
