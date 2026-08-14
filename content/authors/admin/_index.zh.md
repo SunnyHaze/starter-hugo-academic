@@ -60,13 +60,7 @@ email: xiaochen.ma.cs@gmail.com
 
 ### 代表性开源工作
 
-* **DataFlow**
-  面向深度学习研究与部署的数据流系统，覆盖大模型数据准备与工作流自动化。
-  {{< icon name="github" pack="fab" >}} [github.com/OpenDCAI/DataFlow](https://github.com/OpenDCAI/DataFlow) [![](https://img.shields.io/github/stars/OpenDCAI/DataFlow?style=social)](https://github.com/OpenDCAI/DataFlow)
-
-* **IMDLBenCo**
-  面向图像篡改检测与定位的统一训练及评测代码库，为相关研究提供标准化基准。
-  **NeurIPS 2024 Spotlight** · {{< icon name="github" pack="fab" >}} [github.com/scu-zjz/IMDLBenCo](https://github.com/scu-zjz/IMDLBenCo) [![](https://img.shields.io/github/stars/scu-zjz/IMDLBenCo?style=social)](https://github.com/scu-zjz/IMDLBenCo)
+{{< featured-projects >}}
 
 ---
 

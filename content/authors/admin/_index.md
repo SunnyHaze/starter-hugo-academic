@@ -61,15 +61,9 @@ I received my B.Eng. in Computer Science and Technology from the **College of Co
 
 ---
 
-### Representative Works
+### Representative Open-Source Projects
 
-* **DataFlow**
-  A dataflow system for deep learning research and deployment, including unified LLM data preparation and workflow automation.
-  {{< icon name="github" pack="fab" >}} [github.com/OpenDCAI/DataFlow](https://github.com/OpenDCAI/DataFlow) [![](https://img.shields.io/github/stars/OpenDCAI/DataFlow?style=social)](https://github.com/OpenDCAI/DataFlow)
-
-* **IMDLBenCo**
-  A unified training and evaluation codebase for standardized benchmarking of image manipulation detection and localization.
-  **NeurIPS 2024 Spotlight** · {{< icon name="github" pack="fab" >}} [github.com/scu-zjz/IMDLBenCo](https://github.com/scu-zjz/IMDLBenCo) [![](https://img.shields.io/github/stars/scu-zjz/IMDLBenCo?style=social)](https://github.com/scu-zjz/IMDLBenCo)
+{{< featured-projects >}}
 
 ---
 

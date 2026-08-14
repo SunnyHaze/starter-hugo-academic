@@ -1,0 +1,5 @@
+{{- $script := resources.Get "js/project-tabs.js" | js.Build (dict "minify" true) -}}
+{{- if hugo.IsProduction -}}
+  {{- $script = $script | fingerprint "md5" -}}
+{{- end -}}
+<script src="{{ $script.RelPermalink }}"></script>

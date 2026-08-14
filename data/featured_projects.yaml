@@ -1,0 +1,80 @@
+# Homepage project tabs. Edit this file to change project text, order, or badges.
+projects:
+  - id: dataflow
+    name: DataFlow
+    repo: OpenDCAI/DataFlow
+    url: https://github.com/OpenDCAI/DataFlow
+    status_class: core
+    paper:
+      label: arXiv 2512.16676
+      badge_url: https://img.shields.io/badge/arXiv-2512.16676-b31b1b?logo=arxiv
+      url: https://arxiv.org/abs/2512.16676
+    status:
+      en: Core project
+      zh: 核心项目
+    summary:
+      en: A composable data-pipeline and workflow system for LLM data preparation, spanning data generation, cleaning, evaluation, and orchestration.
+      zh: 面向大模型数据准备的可组合数据流水线与工作流系统，覆盖数据生成、清洗、评估与编排。
+    contribution:
+      en: Core contributor across pipeline compilation and execution, operator and registry engineering, storage, serving, and CLI tooling. I also built the RayOrch integration for transparent Ray data parallelism, in-memory storage, resource cleanup, and end-to-end tests.
+      zh: 核心贡献者，参与流水线编译与执行、Operator 与 Registry 工程、存储、服务及 CLI 工具；同时完成 RayOrch 集成，实现透明的 Ray 数据并行、内存存储、资源回收与端到端测试。
+    tags:
+      - LLM Data Infra
+      - Ray
+
+  - id: flash-mineru
+    name: Flash-MinerU
+    repo: OpenDCAI/Flash-MinerU
+    url: https://github.com/OpenDCAI/Flash-MinerU
+    status_class: focus
+    status:
+      en: Current focus
+      zh: 重点推进
+    summary:
+      en: A Ray-powered acceleration layer that turns MinerU PDF-to-Markdown parsing into a scalable multi-GPU and multi-node data pipeline.
+      zh: 基于 Ray 的 MinerU 加速层，将 PDF-to-Markdown 解析升级为可扩展的多 GPU、多节点数据流水线。
+    contribution:
+      en: Project initiator and core developer. I built the initial package and release workflow, then refactored the sequential stages into an asynchronous pipeline with cross-stage overlap, while maintaining benchmarks and compatibility.
+      zh: 项目发起与核心开发；完成初始工程与发布流程，并将串行阶段重构为支持跨阶段重叠的异步流水线，同时维护性能基准与兼容性。
+    tags:
+      - Ray
+      - Pipeline Parallelism
+
+  - id: rayorch
+    name: RayOrch
+    repo: OpenDCAI/RayOrch
+    url: https://github.com/OpenDCAI/RayOrch
+    status_class: focus
+    status:
+      en: Current focus
+      zh: 重点推进
+    summary:
+      en: Lightweight orchestration utilities for asynchronous Ray pipelines, with RayModule, overlapped microbatch execution, and DAG scheduling.
+      zh: 面向异步 Ray 流水线的轻量编排库，提供 RayModule、微批重叠执行与 DAG 调度能力。
+    contribution:
+      en: Project initiator and core developer. I built the initial orchestration abstractions and multi-model examples, refined RayModule and the pipeline executors, and integrated RayOrch into DataFlow for parallel operator execution.
+      zh: 项目发起与核心开发；搭建编排抽象与多模型示例，持续完善 RayModule 和流水线执行器，并将 RayOrch 集成至 DataFlow 的并行算子执行路径。
+    tags:
+      - Ray
+      - Async Pipelines
+
+  - id: imdlbenco
+    name: IMDLBenCo
+    repo: scu-zjz/IMDLBenCo
+    url: https://github.com/scu-zjz/IMDLBenCo
+    status_class: publication
+    paper:
+      label: NeurIPS 2024 paper
+      badge_url: https://img.shields.io/badge/Paper-NeurIPS-4f46e5
+      url: https://proceedings.neurips.cc/paper_files/paper/2024/hash/f280a398c243b5fdaa09f57ece880fc9-Abstract-Datasets_and_Benchmarks_Track.html
+    status:
+      en: NeurIPS 2024 Spotlight
+      zh: NeurIPS 2024 Spotlight
+    summary:
+      en: A modular training and evaluation codebase and comprehensive benchmark for image manipulation detection and localization.
+      zh: 面向图像篡改检测与定位的模块化训练评测代码库与综合基准。
+    contribution:
+      en: Joint first author, codebase designer, and coding lead. I designed the modular training and evaluation framework and have maintained its metrics, model zoo, CLI, packaging, releases, and tests.
+      zh: 共同第一作者、代码库设计者与主要开发者；负责模块化训练评测框架设计，并持续维护指标、模型库、CLI、打包发布与测试。
+    tags:
+      - Benchmark

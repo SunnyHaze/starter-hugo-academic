@@ -1,0 +1,69 @@
+{{- $projects := site.Data.featured_projects.projects -}}
+{{- $lang := cond (eq site.Language.Lang "zh") "zh" "en" -}}
+{{- $is_zh := eq $lang "zh" -}}
+
+<div class="project-tabs" data-project-tabs>
+  <div class="project-tab-list" role="tablist" aria-label="{{ if $is_zh }}代表性开源项目{{ else }}Representative open-source projects{{ end }}">
+    {{- range $index, $project := $projects }}
+    <button
+      class="project-tab{{ if eq $index 0 }} is-active{{ end }}"
+      type="button"
+      role="tab"
+      id="project-tab-{{ $project.id }}"
+      aria-controls="project-panel-{{ $project.id }}"
+      aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}"
+      tabindex="{{ if eq $index 0 }}0{{ else }}-1{{ end }}"
+      data-project-tab
+    >
+      <span class="project-tab-name">{{ $project.name }}</span>
+      <span class="project-tab-status">{{ index $project.status $lang }}</span>
+    </button>
+    {{- end }}
+  </div>
+
+  <div class="project-panels">
+    {{- range $index, $project := $projects }}
+    <article
+      class="project-panel{{ if eq $index 0 }} is-active{{ end }}"
+      id="project-panel-{{ $project.id }}"
+      role="tabpanel"
+      aria-labelledby="project-tab-{{ $project.id }}"
+      tabindex="0"
+      data-project-panel
+    >
+      <div class="project-panel-header">
+        <div class="project-title-row">
+          <a class="project-title-link" href="{{ $project.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ if $is_zh }}在 GitHub 查看 {{ $project.name }}{{ else }}View {{ $project.name }} on GitHub{{ end }}">
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <h4>{{ $project.name }}</h4>
+          </a>
+          <img class="project-stars-badge" src="https://img.shields.io/github/stars/{{ $project.repo }}?style=social" alt="{{ $project.name }} GitHub stars" loading="lazy">
+          {{- with $project.paper }}
+          <a class="project-paper-badge" href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ if $is_zh }}查看 {{ $project.name }} 论文{{ else }}Read the {{ $project.name }} paper{{ end }}">
+            <img src="{{ .badge_url }}" alt="{{ .label }}" loading="lazy">
+          </a>
+          {{- end }}
+        </div>
+        <div class="project-badges" aria-label="{{ if $is_zh }}项目标签{{ else }}Project badges{{ end }}">
+          <span class="project-badge project-badge-{{ $project.status_class }}">{{ index $project.status $lang }}</span>
+          {{- range $project.tags }}
+          <span class="project-badge">{{ . }}</span>
+          {{- end }}
+        </div>
+      </div>
+
+      <div class="project-panel-grid">
+        <div class="project-copy-block">
+          <div class="project-copy-label">{{ if $is_zh }}项目定位{{ else }}Project{{ end }}</div>
+          <p>{{ index $project.summary $lang }}</p>
+        </div>
+        <div class="project-copy-block project-contribution">
+          <div class="project-copy-label">{{ if $is_zh }}我的贡献{{ else }}My contribution{{ end }}</div>
+          <p>{{ index $project.contribution $lang }}</p>
+        </div>
+      </div>
+
+    </article>
+    {{- end }}
+  </div>
+</div>
