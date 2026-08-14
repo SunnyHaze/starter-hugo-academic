@@ -1,6 +1,7 @@
-/** Attach privacy-safe Umami metadata to the homepage's conversion links. */
+/** Attach privacy-safe conversion metadata for the configured analytics providers. */
 (() => {
-  const EVENT_NAME = 'conversion-click';
+  const UMAMI_EVENT_NAME = 'conversion-click';
+  const GA_EVENT_NAME = 'conversion_click';
   const language = document.documentElement.lang.startsWith('zh') ? 'zh' : 'en';
 
   const placementFor = (element) => {
@@ -13,11 +14,22 @@
   };
 
   const annotate = (element, channel, target) => {
-    element.dataset.umamiEvent = EVENT_NAME;
+    element.dataset.umamiEvent = UMAMI_EVENT_NAME;
     element.dataset.umamiEventChannel = channel;
     element.dataset.umamiEventTarget = target;
     element.dataset.umamiEventPlacement = placementFor(element);
     element.dataset.umamiEventLang = language;
+  };
+
+  const trackWithGoogleAnalytics = (element) => {
+    if (typeof window.gtag !== 'function') return;
+
+    window.gtag('event', GA_EVENT_NAME, {
+      click_channel: element.dataset.umamiEventChannel || 'unknown',
+      click_target: element.dataset.umamiEventTarget || 'unknown',
+      click_placement: element.dataset.umamiEventPlacement || 'page',
+      site_language: element.dataset.umamiEventLang || language,
+    });
   };
 
   document.querySelectorAll('a[href]').forEach((link) => {
@@ -46,6 +58,11 @@
   document.querySelectorAll('[data-project-tab]').forEach((tab) => {
     const target = tab.getAttribute('aria-controls')?.replace('project-panel-', '') || 'unknown';
     annotate(tab, 'project', target);
+  });
+
+  document.addEventListener('click', (event) => {
+    const target = event.target.closest('[data-umami-event]');
+    if (target) trackWithGoogleAnalytics(target);
   });
 
   document.querySelectorAll('.analytics-disclosure').forEach((disclosure) => {
