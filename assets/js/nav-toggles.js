@@ -60,7 +60,10 @@
       toggle.classList.add('nav-direct-toggle');
       toggle.removeAttribute('data-toggle');
       toggle.removeAttribute('aria-haspopup');
-      toggle.href = translation.href;
+      // Keep the switch on the current host even if a deployment overrides or
+      // misconfigures Hugo's baseURL (for example, on a preview domain).
+      const targetUrl = new URL(translation.href, window.location.href);
+      toggle.href = `${targetUrl.pathname}${targetUrl.search}${targetUrl.hash}`;
       toggle.setAttribute('aria-label', label);
       toggle.setAttribute('title', label);
 
