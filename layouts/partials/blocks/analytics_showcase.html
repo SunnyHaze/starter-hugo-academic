@@ -50,7 +50,8 @@
 
       <div class="analytics-frame-shell">
         <iframe
-          src="{{ . }}"
+          data-analytics-frame
+          data-src="{{ . }}"
           title="{{ $block.content.frame_title }}"
           loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"

@@ -47,4 +47,18 @@
     const target = tab.getAttribute('aria-controls')?.replace('project-panel-', '') || 'unknown';
     annotate(tab, 'project', target);
   });
+
+  document.querySelectorAll('.analytics-disclosure').forEach((disclosure) => {
+    const frame = disclosure.querySelector('[data-analytics-frame]');
+    if (!frame) return;
+
+    const loadFrame = () => {
+      if (disclosure.open && !frame.getAttribute('src')) {
+        frame.setAttribute('src', frame.dataset.src);
+      }
+    };
+
+    disclosure.addEventListener('toggle', loadFrame);
+    loadFrame();
+  });
 })();

@@ -1,4 +1,2 @@
-{{- if and hugo.IsProduction site.Params.marketing.analytics.umami.website_id -}}
-  {{- $script := resources.Get "js/analytics-events.js" | js.Build (dict "minify" true) -}}
+{{- $script := resources.Get "js/analytics-events.js" | js.Build (dict "minify" true) -}}
 <script src="{{ $script.RelPermalink }}"></script>
-{{- end -}}
