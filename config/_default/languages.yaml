@@ -31,6 +31,6 @@ zh:
       - name: 联系方式
         url: '#contact'
         weight: 60
-      - name: 简历
-        url: '../uploads/resume.pdf'
-        weight: 70
+      # - name: 简历
+      #   url: '../uploads/resume.pdf'
+      #   weight: 70
