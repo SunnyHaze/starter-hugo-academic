@@ -8,7 +8,7 @@
     <span>Google Scholar</span>
   </a>
   <span class="impact-metric">
-    <strong>{{ lang.FormatNumber 0 $stats.citations }}+</strong>
+    <strong>{{ lang.FormatNumber 0 $stats.citations }}</strong>
     <span>{{ if $is_zh }}次引用{{ else }}citations{{ end }}</span>
   </span>
   {{- if gt ($stats.h_index | default 0) 0 }}
