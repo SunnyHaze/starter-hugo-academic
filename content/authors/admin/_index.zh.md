@@ -12,24 +12,15 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/Sunnyhaze
-    label: GitHub
-    button_class: github
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=hGEIyCEAAAAJ
-    label: Scholar
-    metric: scholar_citations
-    button_class: scholar
   - icon: envelope
     icon_pack: fas
     link: mailto:xiaochen.ma.cs@gmail.com
-    label: Email
-    button_class: email
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/xiaochen-ma-61b109250/
-    label: LinkedIn
-    button_class: linkedin
 #  - icon: file-alt
 #    icon_pack: fas
 #    link: ../uploads/resume.pdf
@@ -64,6 +55,8 @@ email: xiaochen.ma.cs@gmail.com
 攻读博士学位前，曾于 2025 年 1 月至 2026 年 1 月在北京大学任全职研究助理，师从[张文涛教授](https://zwt233.github.io/)，从事大语言模型与多模态大模型研究；2023 年 7 月至 2024 年 6 月在四川大学任全职研究助理，师从[周吉喆教授](https://Knightzjz.github.io)。
 
 2023 年 6 月获四川大学计算机学院计算机科学与技术工学学士学位。本科毕业论文获评优秀本科毕业论文（400 余名学生中排名前二）。
+
+{{< scholar-stats >}}
 
 参与开发的主要开源项目在 {{< icon name="github" pack="fab" >}} [GitHub](https://github.com/SunnyHaze) 合计获得 {{< github-stars >}}。
 

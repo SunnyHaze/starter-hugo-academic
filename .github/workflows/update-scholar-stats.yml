@@ -1,0 +1,38 @@
+name: Update Google Scholar metrics
+
+on:
+  schedule:
+    # Every Monday at 10:37 Asia/Shanghai (GitHub Actions uses UTC).
+    - cron: '37 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-scholar-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v7
+
+      - name: Read Google Scholar metrics
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: python scripts/update_scholar_stats.py
+
+      - name: Commit updated metrics
+        run: |
+          if git diff --quiet -- data/scholar.yaml; then
+            echo "Google Scholar metrics are unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/scholar.yaml
+          git commit -m "Update homepage Scholar metrics"
+          git push

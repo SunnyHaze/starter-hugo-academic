@@ -13,24 +13,15 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/Sunnyhaze
-    label: GitHub
-    button_class: github
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=hGEIyCEAAAAJ
-    label: Scholar
-    metric: scholar_citations
-    button_class: scholar
   - icon: envelope
     icon_pack: fas
     link: mailto:xiaochen.ma.cs@gmail.com
-    label: Email
-    button_class: email
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/xiaochen-ma-61b109250/
-    label: LinkedIn
-    button_class: linkedin
   # - icon: file-alt
   #   icon_pack: fas
   #   link: uploads/resume.pdf
@@ -67,6 +58,8 @@ My research focuses on **data infrastructure and high-performance distributed sy
 Before starting my Ph.D., I was a full-time Research Assistant at Peking University from January 2025 to January 2026, where I worked with Prof. [Wentao Zhang](https://zwt233.github.io/) on large language models and multimodal large language models. Earlier, from July 2023 to June 2024, I was a full-time Research Assistant at Sichuan University, advised by Prof. [Jizhe Zhou](https://Knightzjz.github.io/).
 
 I received my B.Eng. in Computer Science from the College of Computer Science at Sichuan University in June 2023. My undergraduate thesis was recognized as an Outstanding Undergraduate Thesis, placing in the top two among more than 400 students.
+
+{{< scholar-stats >}}
 
 The main open-source projects I have contributed to have received {{< github-stars >}} on {{< icon name="github" pack="fab" >}} [GitHub](https://github.com/SunnyHaze) in total.
 

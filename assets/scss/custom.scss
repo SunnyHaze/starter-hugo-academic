@@ -12,69 +12,15 @@
   height: 20px;
 }
 
-/* Labelled profile links, including the weekly-updated Scholar citation count. */
-#profile .profile-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.55rem;
-  margin-top: 1.25rem;
-}
-
-#profile .profile-actions li {
-  display: block;
-  margin: 0;
-}
-
-#profile .profile-action {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.38rem;
-  min-height: 2.2rem;
-  padding: 0.58rem 0.78rem;
-  border-radius: 0.48rem;
-  box-shadow: 0 0.25rem 0.7rem rgba(15, 23, 42, 0.12);
-  color: #fff !important;
-  font-size: 0.76rem;
-  font-weight: 650;
-  line-height: 1;
-  text-decoration: none !important;
-  transition: box-shadow 150ms ease, filter 150ms ease, transform 150ms ease;
-}
-
-#profile .profile-action:hover {
-  box-shadow: 0 0.4rem 0.9rem rgba(15, 23, 42, 0.18);
-  filter: brightness(1.06);
-  transform: translateY(-1px);
-}
-
-#profile .profile-action .big-icon {
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-#profile .profile-action-github {
-  background: #24292f;
-}
-
-#profile .profile-action-scholar {
-  background: #4285f4;
-}
-
-#profile .profile-action-email {
-  background: #64748b;
-}
-
-#profile .profile-action-linkedin {
-  background: #0a66c2;
-}
-
-#profile .profile-action-cv {
-  background: #0f766e;
-}
-
-#profile .profile-action-metric {
+/* Scholar metrics rendered as a single résumé-style line. */
+.article-style .research-impact {
+  margin: 1rem 0;
   font-variant-numeric: tabular-nums;
+}
+
+.article-style .research-impact span {
+  margin: 0 0.28rem;
+  color: #94a3b8;
 }
 
 /* Two-track career timeline: education on the left, research/industry on the right. */

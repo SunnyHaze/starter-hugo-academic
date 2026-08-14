@@ -1,0 +1,13 @@
+{{- $stats := site.Data.scholar -}}
+{{- $profile := "https://scholar.google.com/citations?user=hGEIyCEAAAAJ" -}}
+{{- $is_zh := eq site.Language.Lang "zh" -}}
+<p class="research-impact">
+  <strong>{{ if $is_zh }}学术影响：{{ else }}Research impact:{{ end }}</strong>
+  <a href="{{ $profile }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+  <span aria-hidden="true">·</span>
+  <strong>{{ lang.FormatNumber 0 $stats.citations }}+ {{ if $is_zh }}次引用{{ else }}citations{{ end }}</strong>
+  {{- if gt ($stats.h_index | default 0) 0 }}
+  <span aria-hidden="true">·</span>
+  <strong>h-index {{ $stats.h_index }}</strong>
+  {{- end }}
+</p>
