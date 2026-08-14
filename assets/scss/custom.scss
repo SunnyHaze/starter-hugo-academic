@@ -12,15 +12,80 @@
   height: 20px;
 }
 
-/* Research and open-source metrics rendered as matching résumé-style lines. */
-.article-style .impact-line {
-  margin: 1rem 0;
+/* Layered impact cards with inline brand buttons and metric chips. */
+.article-style .impact-card {
+  --impact-accent: #4285f4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.65rem 0;
+  padding: 0.58rem 0.68rem;
+  border: 1px solid rgba(66, 133, 244, 0.18);
+  border-left: 3px solid var(--impact-accent);
+  border-radius: 0.65rem;
+  background: rgba(66, 133, 244, 0.035);
+  box-shadow: 0 0.16rem 0.55rem rgba(15, 23, 42, 0.06);
   font-variant-numeric: tabular-nums;
 }
 
-.article-style .impact-line span {
-  margin: 0 0.28rem;
-  color: #94a3b8;
+.article-style .impact-card-github {
+  --impact-accent: #24292f;
+  border-color: rgba(36, 41, 47, 0.16);
+  background: rgba(36, 41, 47, 0.025);
+}
+
+.article-style .impact-label {
+  min-width: 7.4rem;
+  font-size: 0.82rem;
+}
+
+.article-style .impact-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.34rem;
+  padding: 0.37rem 0.58rem;
+  border-radius: 0.44rem;
+  background: var(--impact-accent);
+  color: #fff !important;
+  font-size: 0.76rem;
+  font-weight: 650;
+  line-height: 1;
+  text-decoration: none !important;
+  transition: filter 150ms ease, transform 150ms ease;
+}
+
+.article-style .impact-source:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.article-style .impact-source i {
+  font-size: 0.9rem;
+}
+
+.article-style .impact-metric {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.24rem;
+  padding: 0.31rem 0.5rem;
+  border: 1px solid rgba(100, 116, 139, 0.2);
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.08);
+  font-size: 0.75rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.article-style .impact-metric strong {
+  color: var(--impact-accent);
+}
+
+@media (max-width: 575.98px) {
+  .article-style .impact-label {
+    flex-basis: 100%;
+    min-width: 0;
+  }
 }
 
 /* Two-track career timeline: education on the left, research/industry on the right. */

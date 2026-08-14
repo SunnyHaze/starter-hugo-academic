@@ -1,17 +1,20 @@
 {{- $stats := site.Data.scholar -}}
 {{- $profile := "https://scholar.google.com/citations?user=hGEIyCEAAAAJ" -}}
 {{- $is_zh := eq site.Language.Lang "zh" -}}
-<p class="impact-line">
-  <strong>{{ if $is_zh }}学术影响：{{ else }}Research impact:{{ end }}</strong>
-  <a href="{{ $profile }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-  <span aria-hidden="true">·</span>
-  <strong>{{ lang.FormatNumber 0 $stats.citations }}+ {{ if $is_zh }}次引用{{ else }}citations{{ end }}</strong>
+<div class="impact-card impact-card-scholar" role="group" aria-label="{{ if $is_zh }}学术影响{{ else }}Research impact{{ end }}">
+  <strong class="impact-label">{{ if $is_zh }}学术影响{{ else }}Research impact{{ end }}</strong>
+  <a class="impact-source" href="{{ $profile }}" target="_blank" rel="noopener noreferrer">
+    <i class="ai ai-google-scholar" aria-hidden="true"></i>
+    <span>Google Scholar</span>
+  </a>
+  <span class="impact-metric">
+    <strong>{{ lang.FormatNumber 0 $stats.citations }}+</strong>
+    <span>{{ if $is_zh }}次引用{{ else }}citations{{ end }}</span>
+  </span>
   {{- if gt ($stats.h_index | default 0) 0 }}
-  <span aria-hidden="true">·</span>
-  <strong>h-index {{ $stats.h_index }}</strong>
+  <span class="impact-metric"><span>h-index</span><strong>{{ $stats.h_index }}</strong></span>
   {{- end }}
   {{- if gt ($stats.i10_index | default 0) 0 }}
-  <span aria-hidden="true">·</span>
-  <strong>i10-index {{ $stats.i10_index }}</strong>
+  <span class="impact-metric"><span>i10-index</span><strong>{{ $stats.i10_index }}</strong></span>
   {{- end }}
-</p>
+</div>
