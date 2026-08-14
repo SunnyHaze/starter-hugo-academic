@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # title: Academic # Website name
-title: Xiaochen Ma’s Homepage
+title: Xiaochen Ma
 baseURL: 'https://example.com/' # Website URL
 
 ############################

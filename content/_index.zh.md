@@ -1,5 +1,7 @@
 ---
 title:
+seo:
+  title: 马晓晨的个人主页
 date: 2022-10-24
 type: landing
 

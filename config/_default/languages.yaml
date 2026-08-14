@@ -5,12 +5,12 @@
 # Default language
 en:
   languageCode: en-us
-  title: Xiaochen Ma’s Homepage
+  title: Xiaochen Ma
   weight: 1
 
 zh:
   languageCode: zh-Hans
-  title: 马晓晨的个人主页
+  title: 马晓晨
   weight: 2
   params:
     description: 马晓晨的个人学术主页
