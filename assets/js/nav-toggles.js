@@ -4,6 +4,70 @@
  * persistence, code highlighting, diagrams, and the wcThemeChange event.
  */
 (() => {
+  const SCROLL_PARAMS = {
+    document: '_lang_scroll',
+    section: '_lang_section',
+    sectionProgress: '_lang_section_progress',
+  };
+
+  const captureLanguageScroll = () => {
+    const viewportAnchor = window.scrollY + window.innerHeight / 2;
+    const sections = [...document.querySelectorAll('main section[id]')];
+    const section = sections.find((candidate) => {
+      const top = candidate.getBoundingClientRect().top + window.scrollY;
+      return viewportAnchor >= top && viewportAnchor <= top + candidate.offsetHeight;
+    });
+    const maxScroll = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
+    return {
+      documentProgress: window.scrollY / maxScroll,
+      sectionId: section?.id || '',
+      sectionProgress: section
+        ? (viewportAnchor - (section.getBoundingClientRect().top + window.scrollY)) / Math.max(section.offsetHeight, 1)
+        : 0,
+    };
+  };
+
+  const restoreLanguageScroll = () => {
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has(SCROLL_PARAMS.document)) return;
+
+    const state = {
+      documentProgress: Number(url.searchParams.get(SCROLL_PARAMS.document)),
+      sectionId: url.searchParams.get(SCROLL_PARAMS.section) || '',
+      sectionProgress: Number(url.searchParams.get(SCROLL_PARAMS.sectionProgress)),
+    };
+    if (!Number.isFinite(state.documentProgress)) return;
+
+    Object.values(SCROLL_PARAMS).forEach((parameter) => url.searchParams.delete(parameter));
+    history.replaceState(history.state, '', `${url.pathname}${url.search}${url.hash}`);
+
+    const restore = () => {
+      const maxScroll = Math.max(document.documentElement.scrollHeight - window.innerHeight, 0);
+      let top = state.documentProgress * maxScroll;
+      const section = state.sectionId ? document.getElementById(state.sectionId) : null;
+
+      if (section) {
+        const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+        top = sectionTop + state.sectionProgress * section.offsetHeight - window.innerHeight / 2;
+      }
+
+      window.scrollTo(0, Math.min(Math.max(top, 0), maxScroll));
+    };
+
+    const restoreAfterLayout = () => {
+      requestAnimationFrame(() => requestAnimationFrame(restore));
+      // The career timeline and web fonts can still settle just after load.
+      window.setTimeout(restore, 300);
+    };
+    if (document.readyState === 'complete') {
+      restoreAfterLayout();
+    } else {
+      window.addEventListener('load', restoreAfterLayout, { once: true });
+    }
+  };
+
+  restoreLanguageScroll();
+
   const themeItem = document.querySelector('.theme-dropdown');
 
   if (themeItem) {
@@ -66,6 +130,13 @@
       toggle.href = `${targetUrl.pathname}${targetUrl.search}${targetUrl.hash}`;
       toggle.setAttribute('aria-label', label);
       toggle.setAttribute('title', label);
+      toggle.addEventListener('click', () => {
+        const state = captureLanguageScroll();
+        targetUrl.searchParams.set(SCROLL_PARAMS.document, state.documentProgress.toFixed(6));
+        targetUrl.searchParams.set(SCROLL_PARAMS.section, state.sectionId);
+        targetUrl.searchParams.set(SCROLL_PARAMS.sectionProgress, state.sectionProgress.toFixed(6));
+        toggle.href = `${targetUrl.pathname}${targetUrl.search}${targetUrl.hash}`;
+      });
 
       const currentLabel = toggle.querySelector('span');
       if (currentLabel) {

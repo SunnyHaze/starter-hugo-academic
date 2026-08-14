@@ -1,0 +1,2 @@
+{{- $career_timeline_js := resources.Get "js/career-timeline.js" | js.Build | minify | fingerprint -}}
+<script src="{{ $career_timeline_js.RelPermalink }}" integrity="{{ $career_timeline_js.Data.Integrity }}" defer></script>

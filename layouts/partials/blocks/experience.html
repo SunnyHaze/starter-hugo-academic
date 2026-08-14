@@ -1,10 +1,17 @@
-{{/* Local override: two-track education and research/industry timeline. */}}
+{{/* Local override: compact cards positioned against a compressed chronological axis. */}}
 
 {{ $block := .wcBlock }}
 {{ $date_format := $block.content.date_format | default "Jan 2006" }}
+{{ $now_date := now.Format "2006-01-02" }}
 
-<div class="col-12 career-timeline" aria-label="{{ i18n "career_timeline_aria" | default "Education and professional experience timeline" }}">
-  <div class="career-timeline-head" aria-hidden="true">
+<div
+  class="col-12 career-timeline"
+  data-career-timeline
+  data-now="{{ $now_date }}"
+  data-now-label="{{ i18n "present" | default "Present" }}"
+  aria-label="{{ i18n "career_timeline_aria" | default "Education and professional experience timeline" }}"
+>
+  <div class="career-track-heads" aria-hidden="true">
     <div class="career-track-title career-track-education">
       <span class="career-track-kicker">{{ i18n "career_academic" | default "Academic" }}</span>
       <span>{{ i18n "career_education" | default "Education" }}</span>
@@ -16,60 +23,34 @@
     </div>
   </div>
 
-  <div class="career-timeline-body">
-    {{ range $block.content.items }}
-      {{ $track := .track | default "experience" }}
-      <article class="career-entry career-entry-{{ $track }}">
-        <div class="career-node" aria-hidden="true"></div>
-        <div class="card career-card">
-          <div class="card-body">
-            <div class="career-card-topline">
-              <span class="career-kind">
-                {{ if eq $track "education" }}
-                  {{ i18n "career_education" | default "Education" }}
-                {{ else }}
-                  {{ i18n "career_research_industry" | default "Research & Industry" }}
-                {{ end }}
-              </span>
-              <span class="career-date">
-                {{ (time .date_start) | time.Format $date_format }} –
-                {{ if .date_end }}
-                  {{ (time .date_end) | time.Format $date_format }}
-                {{ else }}
-                  {{ i18n "present" | default "Present" }}
-                {{ end }}
-              </span>
-            </div>
+  <div class="career-chronology" data-career-chronology>
+    <div class="career-time-axis" data-career-axis>
+      <div class="career-axis-line"></div>
+      <div class="career-axis-ticks" data-career-ticks></div>
+      {{ range $index, $item := $block.content.items }}
+        {{ $track := $item.track | default "experience" }}
+        <span
+          class="career-axis-focus career-axis-focus-{{ $track }}"
+          data-career-focus
+          data-target="career-item-{{ $index }}"
+          aria-hidden="true"
+        ></span>
+        <span
+          class="career-period career-period-{{ $track }}"
+          data-career-period
+          data-target="career-item-{{ $index }}"
+          data-start="{{ $item.date_start }}"
+          data-end="{{ $item.date_end }}"
+          aria-hidden="true"
+        ></span>
+      {{ end }}
+    </div>
 
-            <div class="career-card-main">
-              {{- if .company_logo -}}
-                {{- $brand_logo := resources.Get (printf "media/icons/brands/%s.svg" .company_logo) -}}
-                {{- if not $brand_logo -}}
-                  {{- $brand_logo = resources.Get (printf "media/icons/brands/%s.png" .company_logo) -}}
-                {{- end -}}
-                {{ if not $brand_logo }}{{ errorf "Brand logo `%s` not found as SVG or PNG in `assets/media/icons/brands/`" .company_logo }}{{ end }}
-                <div class="career-logo">
-                  {{- with .company_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end -}}
-                  <img src="{{ $brand_logo.RelPermalink }}" width="48" height="48" alt="{{ .company | plainify }}" loading="lazy">
-                  {{- with .company_url }}</a>{{ end -}}
-                </div>
-              {{- end }}
-
-              <div class="career-copy">
-                <div class="section-subheading career-title">{{ .title | markdownify | emojify }}</div>
-                <div class="career-company">
-                  {{- with .company_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end -}}
-                  {{ .company | markdownify | emojify }}
-                  {{- with .company_url }}</a>{{ end -}}
-                </div>
-                {{ with .location }}<div class="career-location">{{ . }}</div>{{ end }}
-              </div>
-            </div>
-
-            {{ with .description }}<div class="career-description">{{ . | markdownify | emojify }}</div>{{ end }}
-          </div>
-        </div>
-      </article>
-    {{ end }}
+    <div class="career-card-layer">
+      {{ range $index, $item := $block.content.items }}
+        {{ $track := $item.track | default "experience" }}
+        {{ partial "career-card.html" (dict "item" $item "track" $track "date_format" $date_format "index" $index) }}
+      {{ end }}
+    </div>
   </div>
 </div>

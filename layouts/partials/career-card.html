@@ -1,0 +1,65 @@
+{{ $item := .item }}
+{{ $track := .track }}
+{{ $date_format := .date_format }}
+
+<article
+  class="career-lane-card career-lane-card-{{ $track }}"
+  id="career-item-{{ .index }}"
+  data-career-card
+  data-start="{{ $item.date_start }}"
+  data-end="{{ $item.date_end }}"
+  data-track="{{ $track }}"
+  tabindex="0"
+  aria-labelledby="career-title-{{ .index }}"
+  style="--career-delay: {{ mul .index 55 }}ms"
+>
+  <span class="career-connector" aria-hidden="true"><span class="career-connector-node"></span></span>
+  <div class="card career-card">
+    <div class="card-body">
+      <div class="career-card-topline">
+        <span class="career-kind">
+          {{ if eq $track "education" }}
+            {{ i18n "career_education" | default "Education" }}
+          {{ else }}
+            {{ i18n "career_research_industry" | default "Research & Industry" }}
+          {{ end }}
+        </span>
+        <span class="career-date">
+          {{ (time $item.date_start) | time.Format $date_format }} –
+          {{ if $item.date_end }}
+            {{ (time $item.date_end) | time.Format $date_format }}
+          {{ else }}
+            {{ i18n "present" | default "Present" }}
+          {{ end }}
+        </span>
+      </div>
+
+      <div class="career-card-main">
+        {{- if $item.company_logo -}}
+          {{- $brand_logo := resources.Get (printf "media/icons/brands/%s.svg" $item.company_logo) -}}
+          {{- if not $brand_logo -}}
+            {{- $brand_logo = resources.Get (printf "media/icons/brands/%s.png" $item.company_logo) -}}
+          {{- end -}}
+          {{ if not $brand_logo }}{{ errorf "Brand logo `%s` not found as SVG or PNG in `assets/media/icons/brands/`" $item.company_logo }}{{ end }}
+          <div class="career-logo">
+            {{- with $item.company_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end -}}
+            <img src="{{ $brand_logo.RelPermalink }}" width="48" height="48" alt="{{ $item.company | plainify }}" loading="lazy">
+            {{- with $item.company_url }}</a>{{ end -}}
+          </div>
+        {{- end }}
+
+        <div class="career-copy">
+          <div class="section-subheading career-title" id="career-title-{{ .index }}">{{ $item.title | markdownify | emojify }}</div>
+          <div class="career-company">
+            {{- with $item.company_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end -}}
+            {{ $item.company | markdownify | emojify }}
+            {{- with $item.company_url }}</a>{{ end -}}
+          </div>
+          {{ with $item.location }}<div class="career-location">{{ . }}</div>{{ end }}
+        </div>
+      </div>
+
+      {{ with $item.description }}<div class="career-description">{{ . | markdownify | emojify }}</div>{{ end }}
+    </div>
+  </div>
+</article>
