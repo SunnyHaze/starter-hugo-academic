@@ -23,6 +23,8 @@ sections:
           date_start: '2026-06-24'
           date_end: ''
           track: experience
+          description: |2-
+            **工作内容：** 基于 Ray 与 Apache Spark 构建面向大模型数据准备的 Data Infra。
         - title: 计算机科学与工程博士生
           company: 香港科技大学
           company_url: 'https://hkust.edu.hk/'
@@ -31,6 +33,8 @@ sections:
           date_start: '2026-02-22'
           date_end: ''
           track: education
+          description: |2-
+            **导师：** [袁彬航教授](https://binhangyuan.github.io/site/)与[张文涛教授](https://zwt233.github.io/)。<br>**研究方向：** 大语言模型数据基础设施与高性能分布式系统。
         - title: 全职研究助理
           company: 北京大学
           company_url: 'https://pku.edu.cn'
@@ -39,6 +43,8 @@ sections:
           date_start: '2025-01-01'
           date_end: '2026-01-30'
           track: experience
+          description: |2-
+            **导师：** [张文涛教授](https://zwt233.github.io/)。<br>**研究方向：** 大语言模型数据准备系统。
         - title: 全职研究助理
           company: 四川大学
           company_url: 'https://scu.edu.cn'
@@ -47,6 +53,8 @@ sections:
           date_start: '2023-07-01'
           date_end: '2024-06-30'
           track: experience
+          description: |2-
+            **导师：** [周吉喆教授](https://knightzjz.github.io/)。<br>**研究方向：** 图像篡改检测与定位，包括基准与开源代码库建设。
         - title: 本科生
           company: 四川大学
           company_url: 'https://scu.edu.cn'
@@ -55,6 +63,7 @@ sections:
           date_start: '2019-09-01'
           date_end: '2023-06-01'
           track: education
+          description: 计算机科学与技术工学学士；本科毕业论文获评优秀本科毕业论文。
     design:
       columns: '1'
       css_class: career-timeline-section

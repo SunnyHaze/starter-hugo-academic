@@ -77,6 +77,8 @@ sections:
           date_start: '2026-06-24'
           date_end: ''
           track: experience
+          description: |2-
+            **Focus:** Building data infrastructure for LLM data preparation with Ray and Apache Spark.
         - title: PhD Student in Computer Science and Engineering
           company: The Hong Kong University of Science and Technology
           company_url: 'https://hkust.edu.hk/'
@@ -85,6 +87,8 @@ sections:
           date_start: '2026-02-22'
           date_end: ''
           track: education
+          description: |2-
+            **Advisors:** Prof. [Binhang Yuan](https://binhangyuan.github.io/site/) and Prof. [Wentao Zhang](https://zwt233.github.io/).<br>**Research:** LLM data infrastructure and high-performance distributed systems.
         - title: Full-time Research Assistant
           company: Peking University
           company_url: 'https://pku.edu.cn'
@@ -93,6 +97,8 @@ sections:
           date_start: '2025-01-01'
           date_end: '2026-01-30'
           track: experience
+          description: |2-
+            **Advisor:** Prof. [Wentao Zhang](https://zwt233.github.io/).<br>**Research:** Data preparation systems for large language models.
         - title: Full-time Research Assistant
           company: Sichuan University
           company_url: 'https://scu.edu.cn'
@@ -101,12 +107,8 @@ sections:
           date_start: '2023-07-01'
           date_end: '2024-06-30'
           track: experience
-          # description: |2-
-          #     Responsibilities include:
-
-          #     * Analysing
-          #     * Modelling
-          #     * Deploying
+          description: |2-
+            **Advisor:** Prof. [Jizhe Zhou](https://knightzjz.github.io/).<br>**Research:** Image manipulation detection and localization, including benchmark and open-source codebase development.
 
         - title: Undergraduate Student
           company: Sichuan University
@@ -116,7 +118,7 @@ sections:
           date_start: '2019-09-01'
           date_end: '2023-06-01'
           track: education
-          # description: Taught electronic engineering and researched semiconductor physics.
+          description: B.Eng. in Computer Science and Technology; Outstanding Undergraduate Thesis.
     design:
       columns: '1'
       css_class: career-timeline-section
