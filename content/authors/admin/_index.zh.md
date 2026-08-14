@@ -24,8 +24,6 @@ social:
 #  - icon: file-alt
 #    icon_pack: fas
 #    link: ../uploads/resume.pdf
-#    label: CV
-#    button_class: cv
 organizations:
   - name: 香港科技大学
     url: https://hkust.edu.hk/

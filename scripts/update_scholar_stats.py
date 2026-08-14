@@ -1,4 +1,10 @@
-"""Update the Google Scholar metrics rendered on the homepage."""
+"""Update the Google Scholar metrics rendered on the homepage.
+
+Credential maintenance:
+- Manage or regenerate the key at https://serpapi.com/manage-api-key
+- Store it as the ``SERPAPI_KEY`` Actions repository secret in GitHub.
+- Never place the key in this file, the workflow, or ``data/scholar.yaml``.
+"""
 
 from __future__ import annotations
 
@@ -15,9 +21,10 @@ import urllib.request
 AUTHOR_ID = "hGEIyCEAAAAJ"
 DATA_FILE = pathlib.Path(__file__).resolve().parents[1] / "data" / "scholar.yaml"
 SERPAPI_URL = "https://serpapi.com/search.json"
+METRIC_KEYS = ("citations", "h_index", "i10_index")
 
 
-def fetch_stats() -> tuple[int, int, int]:
+def fetch_stats() -> dict[str, int]:
     api_key = os.environ.get("SERPAPI_KEY")
     if not api_key:
         raise RuntimeError("SERPAPI_KEY is not configured")
@@ -45,38 +52,37 @@ def fetch_stats() -> tuple[int, int, int]:
 
     values: dict[str, int] = {}
     for row in payload.get("cited_by", {}).get("table", []):
-        for key in ("citations", "h_index", "i10_index"):
+        for key in METRIC_KEYS:
             value = row.get(key, {}).get("all")
             if isinstance(value, int):
                 values[key] = value
 
-    missing = [key for key in ("citations", "h_index", "i10_index") if key not in values]
+    missing = [key for key in METRIC_KEYS if key not in values]
     if missing:
         raise RuntimeError(f"SerpAPI response is missing: {', '.join(missing)}")
-    if values["citations"] <= 0 or values["h_index"] <= 0 or values["i10_index"] <= 0:
+    if any(values[key] <= 0 for key in METRIC_KEYS):
         raise RuntimeError("SerpAPI returned invalid Scholar metrics")
 
-    return values["citations"], values["h_index"], values["i10_index"]
+    return values
 
 
-def current_stats() -> tuple[int, int, int] | None:
+def current_stats() -> dict[str, int] | None:
     content = DATA_FILE.read_text(encoding="utf-8")
     parsed: dict[str, int] = {}
-    for key in ("citations", "h_index", "i10_index"):
+    for key in METRIC_KEYS:
         match = re.search(rf"^{key}:\s*(\d+)\s*$", content, re.MULTILINE)
         if not match:
             return None
         parsed[key] = int(match.group(1))
-    return parsed["citations"], parsed["h_index"], parsed["i10_index"]
+    return parsed
 
 
 def main() -> None:
-    citations, h_index, i10_index = fetch_stats()
-    new_stats = (citations, h_index, i10_index)
-    if current_stats() == new_stats:
+    stats = fetch_stats()
+    if current_stats() == stats:
         print(
-            f"Scholar metrics unchanged: citations={citations}, "
-            f"h-index={h_index}, i10-index={i10_index}"
+            f"Scholar metrics unchanged: citations={stats['citations']}, "
+            f"h-index={stats['h_index']}, i10-index={stats['i10_index']}"
         )
         return
 
@@ -85,9 +91,7 @@ def main() -> None:
         "\n".join(
             [
                 "# Updated weekly from Google Scholar through SerpAPI.",
-                f"citations: {citations}",
-                f"h_index: {h_index}",
-                f"i10_index: {i10_index}",
+                *(f"{key}: {stats[key]}" for key in METRIC_KEYS),
                 f"updated: {updated}",
                 "",
             ]
@@ -96,8 +100,8 @@ def main() -> None:
         newline="\n",
     )
     print(
-        f"Scholar metrics updated: citations={citations}, "
-        f"h-index={h_index}, i10-index={i10_index} ({updated})"
+        f"Scholar metrics updated: citations={stats['citations']}, "
+        f"h-index={stats['h_index']}, i10-index={stats['i10_index']} ({updated})"
     )
 
 

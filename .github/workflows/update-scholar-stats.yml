@@ -1,5 +1,11 @@
 name: Update Google Scholar metrics
 
+# SerpAPI maintenance:
+# - View or regenerate the key at https://serpapi.com/manage-api-key
+# - Store it in this repository under Settings > Secrets and variables >
+#   Actions > Repository secrets, using the exact name SERPAPI_KEY.
+# - After rotating the key, update that GitHub secret; never commit the key.
+
 on:
   schedule:
     # Every Monday at 10:37 Asia/Shanghai (GitHub Actions uses UTC).
