@@ -100,7 +100,7 @@ sections:
     content:
       title: 实时统计
       expand_label: 查看概览
-      expand_hint: 访客 · 浏览量 · 地域
+      expand_hint: 过去 28 天 · 浏览量 · 会话 · 地域
       open_label: 完整视图
       frame_title: 马晓晨个人主页公开访问分析
       loading_label: 正在加载实时统计…

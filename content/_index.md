@@ -334,7 +334,7 @@ sections:
     content:
       title: Live Stats
       expand_label: View overview
-      expand_hint: Visitors · Views · Geography
+      expand_hint: Last 28 days · Views · Sessions · Geography
       open_label: Full view
       frame_title: Public analytics for Xiaochen Ma's homepage
       loading_label: Loading live statistics…
