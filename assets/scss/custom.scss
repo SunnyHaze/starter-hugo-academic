@@ -366,6 +366,7 @@
 
 .career-timeline {
   --timeline-gap: 64px;
+  --timeline-overlap: 42px;
   --education-color: #2563eb;
   --experience-color: #0f766e;
   max-width: 1120px;
@@ -440,11 +441,14 @@
 
 .career-entry-education .career-card {
   grid-column: 1;
+  width: calc(100% + var(--timeline-overlap));
   border-top: 3px solid var(--education-color);
 }
 
 .career-entry-experience .career-card {
   grid-column: 3;
+  width: calc(100% + var(--timeline-overlap));
+  margin-left: -42px;
   border-top: 3px solid var(--experience-color);
 }
 
@@ -577,6 +581,11 @@
   .career-entry {
     display: block;
     padding-left: 36px;
+  }
+
+  .career-entry .career-card {
+    width: 100%;
+    margin-left: 0;
   }
 
   .career-node {
