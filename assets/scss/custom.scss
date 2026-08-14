@@ -12,13 +12,13 @@
   height: 20px;
 }
 
-/* Scholar metrics rendered as a single résumé-style line. */
-.article-style .research-impact {
+/* Research and open-source metrics rendered as matching résumé-style lines. */
+.article-style .impact-line {
   margin: 1rem 0;
   font-variant-numeric: tabular-nums;
 }
 
-.article-style .research-impact span {
+.article-style .impact-line span {
   margin: 0 0.28rem;
   color: #94a3b8;
 }

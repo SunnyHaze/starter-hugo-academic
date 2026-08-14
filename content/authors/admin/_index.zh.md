@@ -56,7 +56,7 @@ email: xiaochen.ma.cs@gmail.com
 
 {{< scholar-stats >}}
 
-参与开发的主要开源项目在 {{< icon name="github" pack="fab" >}} [GitHub](https://github.com/SunnyHaze) 合计获得 {{< github-stars >}}。
+{{< github-impact >}}
 
 ---
 

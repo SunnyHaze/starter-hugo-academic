@@ -1,7 +1,7 @@
 {{- $stats := site.Data.scholar -}}
 {{- $profile := "https://scholar.google.com/citations?user=hGEIyCEAAAAJ" -}}
 {{- $is_zh := eq site.Language.Lang "zh" -}}
-<p class="research-impact">
+<p class="impact-line">
   <strong>{{ if $is_zh }}学术影响：{{ else }}Research impact:{{ end }}</strong>
   <a href="{{ $profile }}" target="_blank" rel="noopener noreferrer">Google Scholar</a>
   <span aria-hidden="true">·</span>

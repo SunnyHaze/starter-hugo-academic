@@ -1,0 +1,9 @@
+{{- $stats := site.Data.github -}}
+{{- $profile := "https://github.com/SunnyHaze" -}}
+{{- $is_zh := eq site.Language.Lang "zh" -}}
+<p class="impact-line">
+  <strong>{{ if $is_zh }}开源影响：{{ else }}Open-source impact:{{ end }}</strong>
+  <a href="{{ $profile }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <span aria-hidden="true">·</span>
+  <strong>{{ lang.FormatNumber 0 $stats.stars }}+ {{ if $is_zh }}Stars{{ else }}stars{{ end }}</strong>
+</p>

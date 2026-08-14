@@ -59,7 +59,7 @@ I received my B.Eng. in Computer Science from the College of Computer Science at
 
 {{< scholar-stats >}}
 
-The main open-source projects I have contributed to have received {{< github-stars >}} on {{< icon name="github" pack="fab" >}} [GitHub](https://github.com/SunnyHaze) in total.
+{{< github-impact >}}
 
 ---
 
