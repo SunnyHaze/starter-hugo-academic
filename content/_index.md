@@ -332,12 +332,10 @@ sections:
   - block: analytics_showcase
     id: site-analytics
     content:
-      eyebrow: Live & privacy-friendly
-      title: Homepage activity
-      description: A lightweight, aggregate view of visits to this site. No personal profiles or advertising identifiers are used.
-      expand_label: View live overview
-      expand_hint: Visitors, page views, traffic trends, and geography
-      open_label: Open dashboard
+      title: Live Stats
+      expand_label: View overview
+      expand_hint: Visitors · Views · Geography
+      open_label: Full view
       frame_title: Public analytics for Xiaochen Ma's homepage
       share_url: https://cloud.umami.is/share/L6QQJnSkovbLq4qj
     design:

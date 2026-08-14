@@ -98,12 +98,10 @@ sections:
   - block: analytics_showcase
     id: site-analytics
     content:
-      eyebrow: 实时 · 隐私友好
-      title: 主页访问概览
-      description: 以汇总方式展示本站的访问情况，不使用个人画像或广告标识符。
-      expand_label: 展开实时概览
-      expand_hint: 访客、浏览量、访问趋势与地域分布
-      open_label: 新窗口查看
+      title: 实时统计
+      expand_label: 查看概览
+      expand_hint: 访客 · 浏览量 · 地域
+      open_label: 完整视图
       frame_title: 马晓晨个人主页公开访问分析
       share_url: https://cloud.umami.is/share/L6QQJnSkovbLq4qj
     design:
