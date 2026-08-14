@@ -12,6 +12,20 @@
   height: 20px;
 }
 
+/* The top-right theme and language controls switch directly without menus. */
+.nav-icons .theme-dropdown > .dropdown-menu,
+.nav-icons .i18n-dropdown > .dropdown-menu {
+  display: none !important;
+}
+
+.nav-icons .nav-direct-toggle {
+  white-space: nowrap;
+}
+
+.nav-icons .nav-direct-toggle.dropdown-toggle::after {
+  display: none;
+}
+
 /* Layered impact cards with inline brand buttons and metric chips. */
 .article-style .impact-card {
   --impact-accent: #4285f4;
