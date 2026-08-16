@@ -42,7 +42,7 @@ marketing:
 # Umami board: https://cloud.umami.is/websites/f8a2218e-fec8-46f8-92e5-1ec31ff5ecc6
 # Looker report: https://lookerstudio.google.com/reporting/2ff428f5-3128-4143-a990-923dc375355e
 analytics_showcase:
-  provider: looker # umami | looker
+  provider: umami # umami | looker
   providers:
     umami:
       embed_url: 'https://cloud.umami.is/share/L6QQJnSkovbLq4qj'
