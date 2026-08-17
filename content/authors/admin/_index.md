@@ -69,6 +69,6 @@ I received my B.Eng. in Computer Science and Technology from the **College of Co
 
 ### Academic Service
 
-Reviewer: AAAI 2027, NeurIPS 2026, BMVC 2026, ECCV 2026, CVPR 2026, ICLR 2026, AISTATS 2026, AAAI 2025, NeurIPS 2025, ICCV 2025, ICML 2025, CVPR 2025, ICLR 2025, AISTATS 2025, NeurIPS 2024, and ACM MM 2024.
+Reviewer: AAAI'27, NeurIPS'26, BMVC'26, ECCV'26, CVPR'26, ICLR'26, AISTATS'26, AAAI'25, NeurIPS'25, ICCV'25, ICML'25, CVPR'25, ICLR'25, AISTATS'25, NeurIPS'24, and ACM MM'24.
 
 {style="text-align: justify;"}
