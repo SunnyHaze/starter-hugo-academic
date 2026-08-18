@@ -45,8 +45,9 @@ analytics_showcase:
   provider: umami # umami | looker
   providers:
     umami:
-      embed_url: 'https://cloud.umami.is/share/L6QQJnSkovbLq4qj'
-      external_url: 'https://cloud.umami.is/share/L6QQJnSkovbLq4qj'
+      # Umami reads `date=30day` as the initial range; visitors can still change it in the dashboard.
+      embed_url: 'https://cloud.umami.is/share/L6QQJnSkovbLq4qj?date=30day'
+      external_url: 'https://cloud.umami.is/share/L6QQJnSkovbLq4qj?date=30day'
       frame_ratio: '16 / 10'
     looker:
       # The embed URL becomes public only after sharing and embedding are enabled in Looker Studio.
