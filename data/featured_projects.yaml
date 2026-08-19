@@ -10,14 +10,14 @@ projects:
       badge_url: https://img.shields.io/badge/arXiv-2512.16676-b31b1b?logo=arxiv
       url: https://arxiv.org/abs/2512.16676
     status:
-      en: Core project
-      zh: 核心项目
+      en: Project lead · SIGMOD'27 submission
+      zh: 项目负责人 · 投稿 SIGMOD'27
     summary:
       en: A composable data-pipeline and workflow system for LLM data preparation, spanning data generation, cleaning, evaluation, and orchestration.
       zh: 面向大模型数据准备的可组合数据流水线与工作流系统，覆盖数据生成、清洗、评估与编排。
     contribution:
-      en: Core contributor across pipeline compilation and execution, operator and registry engineering, storage, serving, and CLI tooling. I also built the RayOrch integration for transparent Ray data parallelism, in-memory storage, resource cleanup, and end-to-end tests.
-      zh: 核心贡献者，参与流水线编译与执行、Operator 与 Registry 工程、存储、服务及 CLI 工具；同时完成 RayOrch 集成，实现透明的 Ray 数据并行、内存存储、资源回收与端到端测试。
+      en: Project lead and core contributor, coordinating a team of more than 10 students across system design, implementation, code review, integration, and releases. My engineering contributions span pipeline compilation and execution, operator and registry design, storage, serving, CLI tooling, and RayOrch integration.
+      zh: 项目负责人及核心贡献者，协调 10 余名同学推进系统设计、开发、代码审查、集成与发布；工程工作覆盖流水线编译与执行、Operator 与 Registry 设计、存储、服务、CLI 工具及 RayOrch 集成。
     tags:
       - LLM Data Infra
       - Ray
