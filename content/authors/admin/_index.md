@@ -22,9 +22,9 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/xiaochen-ma-61b109250/
-  # - icon: file-alt
-  #   icon_pack: fas
-  #   link: uploads/resume.pdf
+  - icon: file-alt
+    icon_pack: fas
+    link: /uploads/resume_en_2026.pdf
 organizations:
   - name: HKUST
     url: https://hkust.edu.hk/
