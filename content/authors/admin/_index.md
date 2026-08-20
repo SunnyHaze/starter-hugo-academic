@@ -22,8 +22,8 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/xiaochen-ma-61b109250/
-  - icon: file-alt
-    icon_pack: fas
+  - icon: cv
+    icon_pack: ai
     link: /uploads/resume_en_2026.pdf
 organizations:
   - name: HKUST
