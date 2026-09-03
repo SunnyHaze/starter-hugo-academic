@@ -49,6 +49,33 @@
   background: #fff;
 }
 
+// Keep the GitHub impact card legible in dark mode without changing the other
+// impact cards. The subtle mark outline separates the brand glyph from black.
+.dark .article-style .impact-card-github {
+  border-color: rgba(255, 255, 255, 0.16);
+  border-left-color: #000;
+  background: #0d1117;
+  color: #f8fafc;
+}
+
+.dark .article-style .impact-card-github .impact-source {
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+}
+
+.dark .article-style .impact-card-github .impact-source i {
+  -webkit-text-stroke: 0.35px rgba(255, 255, 255, 0.9);
+}
+
+.dark .article-style .impact-card-github .impact-metric {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dark .article-style .impact-card-github .impact-metric strong {
+  color: #fff;
+}
+
 .article-style .impact-label {
   flex: 0 0 auto;
   font-size: 0.82rem;
