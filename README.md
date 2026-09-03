@@ -55,6 +55,16 @@ Provider URLs and frame ratios live beside that switch under `analytics_showcase
 
 Keep API keys out of this repository. The Umami website ID, GA4 measurement ID, and public report URLs are frontend identifiers and are safe to commit.
 
+## Restore the Tencent Hunyuan experience
+
+The Tencent Hunyuan Qingyun internship is currently hidden while the official HKUST internship process is pending. The original content and logo configuration are retained in place:
+
+- `content/_index.md` and `content/_index.zh.md`: uncomment the YAML item between `HUNYUAN_EXPERIENCE_START` and `HUNYUAN_EXPERIENCE_END` by removing the leading `# ` from each item line.
+- `content/authors/admin/_index.md`: remove the `<!-- HUNYUAN_BIO_START: ` prefix and matching ` -->` suffix around the English internship sentence.
+- `content/authors/admin/_index.zh.md`: remove the `<!-- HUNYUAN_BIO_START：` prefix and matching ` -->` suffix around the Chinese internship sentence.
+
+After restoring both languages, run `scripts/build.ps1` and review the Experience section. The retained entry uses the existing `hunyuan` logo, Beijing location, and start date `2026-06-24`; no new assets or data files are required.
+
 - 👉 [**Get Started**](https://wowchemy.com/hugo-themes/)
 - 📚 [View the **documentation**](https://wowchemy.com/docs/)
 - 💬 [Chat with the **Wowchemy research community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)

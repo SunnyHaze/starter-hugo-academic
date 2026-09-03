@@ -17,16 +17,18 @@ sections:
       title: 经历
       date_format: 2006年1月
       items:
-        - title: 研究实习生（青云计划）
-          company: 腾讯混元基础模型部
-          company_url: 'https://hy.tencent.com/'
-          company_logo: hunyuan
-          location: 北京
-          date_start: '2026-06-24'
-          date_end: ''
-          track: experience
-          description: |2-
-            **工作内容：** 基于 Ray 与 Apache Spark 构建面向大模型数据准备的 Data Infra。
+        # HUNYUAN_EXPERIENCE_START（暂时隐藏；恢复方法见 README）
+        # - title: 研究实习生（青云计划）
+        #   company: 腾讯混元基础模型部
+        #   company_url: 'https://hy.tencent.com/'
+        #   company_logo: hunyuan
+        #   location: 北京
+        #   date_start: '2026-06-24'
+        #   date_end: ''
+        #   track: experience
+        #   description: |2-
+        #     **工作内容：** 基于 Ray 与 Apache Spark 构建面向大模型数据准备的 Data Infra。
+        # HUNYUAN_EXPERIENCE_END
         - title: 计算机科学与工程博士生
           company: 香港科技大学
           company_url: 'https://hkust.edu.hk/'

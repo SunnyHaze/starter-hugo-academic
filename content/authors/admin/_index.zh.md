@@ -46,7 +46,7 @@ email: xiaochen.ma.cs@gmail.com
 
 ## 马晓晨（Xiaochen Ma）
 
-马晓晨，**香港科技大学**计算机科学与工程学系博士生，师从[袁彬航教授](https://binhangyuan.github.io/site/)和[张文涛教授](https://zwt233.github.io/)。目前在[**腾讯混元基础模型部**](https://hy.tencent.com/)实习（**青云计划**），主要研究**大语言模型数据基础设施（Data Infra）与高性能分布式系统**，关注面向大规模 LLM 数据准备的系统设计与性能优化，包括构建易使用、易分发、易复现的数据算子管理系统，以及基于 **Ray 和 Apache Spark** 的高性能数据处理。此前的研究还包括 Data-centric AI 数据准备系统、图像取证，主要涉及图像篡改检测与定位。
+马晓晨，**香港科技大学**计算机科学与工程学系博士生，师从[袁彬航教授](https://binhangyuan.github.io/site/)和[张文涛教授](https://zwt233.github.io/)。<!-- HUNYUAN_BIO_START：目前在[**腾讯混元基础模型部**](https://hy.tencent.com/)实习（**青云计划**）。 -->主要研究**大语言模型数据基础设施（Data Infra）与高性能分布式系统**，关注面向大规模 LLM 数据准备的系统设计与性能优化，包括构建易使用、易分发、易复现的数据算子管理系统，以及基于 **Ray 和 Apache Spark** 的高性能数据处理。此前的研究还包括 Data-centric AI 数据准备系统、图像取证，主要涉及图像篡改检测与定位。
 
 攻读博士学位前，曾于 2025 年 1 月至 2026 年 1 月在**北京大学**任研究助理，师从[张文涛教授](https://zwt233.github.io/)，从事大语言模型数据准备系统；2023 年 7 月至 2024 年 6 月在**四川大学**任全职研究助理，师从[周吉喆教授](https://knightzjz.github.io/)，研究图像篡改检测技术。
 
