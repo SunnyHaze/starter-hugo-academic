@@ -71,17 +71,17 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        # HUNYUAN_EXPERIENCE_START (temporarily hidden; see README)
-        # - title: Research Intern (Qingyun Program)
-        #   company: Tencent Hunyuan, Foundation Model Department
-        #   company_url: 'https://hy.tencent.com/'
-        #   company_logo: hunyuan
-        #   location: Beijing, China
-        #   date_start: '2026-06-24'
-        #   date_end: ''
-        #   track: experience
-        #   description: |2-
-        #     **Focus:** Building data infrastructure for LLM data preparation with Ray and Apache Spark.
+        # HUNYUAN_EXPERIENCE_START
+        - title: Research Intern (Qingyun Program)
+          company: Tencent Hunyuan, Foundation Model Department
+          company_url: 'https://hy.tencent.com/'
+          company_logo: hunyuan
+          location: Beijing, China
+          date_start: '2026-06-24'
+          date_end: ''
+          track: experience
+          description: |2-
+            **Focus:** Building data infrastructure for LLM data preparation with Ray and Apache Spark.
         # HUNYUAN_EXPERIENCE_END
         - title: PhD Student in Computer Science and Engineering
           company: The Hong Kong University of Science and Technology
