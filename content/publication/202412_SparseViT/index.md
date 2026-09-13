@@ -30,7 +30,8 @@ abstract: "Non-semantic features or semantic-agnostic features, which are irrele
 
 tags:
 # - Source Themes
-featured: false
+featured: true
+homepage_weight: 60
 
 links:
 - name: arXiv

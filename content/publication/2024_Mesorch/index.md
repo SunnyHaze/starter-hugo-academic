@@ -34,7 +34,8 @@ abstract: "The mesoscopic level serves as a bridge between the macroscopic and m
 
 tags:
 # - Source Themes
-featured: false
+featured: true
+homepage_weight: 50
 
 links:
 - name: arXiv

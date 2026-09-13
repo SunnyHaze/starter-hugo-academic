@@ -18,8 +18,7 @@ publication_types: ["paper-conference"]
 publication: "**International Conference on Learning Representations 2026**"
 publication_short: "**ICLR'26**"
 abstract: "ReLIFT interleaves reinforcement learning with online fine-tuning on questions beyond a model's current capabilities, combining RL's strength in refining existing reasoning with supervised learning's ability to introduce new knowledge and reasoning patterns."
-featured: true
-homepage_weight: 50
+featured: false
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2506.07527
