@@ -10,8 +10,8 @@ projects:
       badge_url: https://img.shields.io/badge/arXiv-2512.16676-b31b1b?logo=arxiv
       url: https://arxiv.org/abs/2512.16676
     status:
-      en: Project lead · SIGMOD'27 submission
-      zh: 项目负责人 · 投稿 SIGMOD'27
+      en: Project lead · Accepted at SIGMOD'27
+      zh: 项目负责人 · SIGMOD'27 已接收
     summary:
       en: A composable data-pipeline and workflow system for LLM data preparation, spanning data generation, cleaning, evaluation, and orchestration.
       zh: 面向大模型数据准备的可组合数据流水线与工作流系统，覆盖数据生成、清洗、评估与编排。
