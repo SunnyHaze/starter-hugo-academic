@@ -14,7 +14,8 @@ publication_types: ["article"]
 publication: "*arXiv preprint arXiv:2607.16617*"
 publication_short: "**arXiv'26**"
 abstract: "DataFlow-Harness bridges the gap between code generated from natural language and persistent, editable data-pipeline artifacts. It combines procedural skills, live platform context exposed through MCP, and a synchronized visual DAG editor for grounded pipeline construction."
-featured: false
+featured: true
+homepage_weight: 25
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2607.16617

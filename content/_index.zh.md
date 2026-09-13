@@ -76,7 +76,7 @@ sections:
     id: publications
     content:
       title: 精选论文
-      count: 4
+      count: 6
       scholar_url: https://scholar.google.com/citations?user=hGEIyCEAAAAJ
     design:
       columns: '2'
