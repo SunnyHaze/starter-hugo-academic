@@ -50,4 +50,10 @@ links:
 url_pdf: https://arxiv.org/pdf/2512.16676.pdf
 url_code: https://github.com/OpenDCAI/DataFlow
 projects: []
+image:
+  caption: "DataFlow turns diverse raw inputs into high-quality, LLM-ready data."
+  alt_text: "DataFlow overview: generating and cleaning diverse inputs into high-quality data for language-model training and applications."
+  focal_point: "Center"
+  preview_only: false
+  placement: 2
 ---
