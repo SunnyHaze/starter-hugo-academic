@@ -66,9 +66,13 @@ projects:
     repo: OpenDCAI/RayOrch
     url: https://github.com/OpenDCAI/RayOrch
     status_class: focus
+    paper:
+      label: arXiv 2609.18703
+      badge_url: https://img.shields.io/badge/arXiv-2609.18703-b31b1b?logo=arxiv
+      url: https://arxiv.org/abs/2609.18703
     status:
-      en: Current focus
-      zh: 重点推进
+      en: First-author paper · arXiv'26
+      zh: 一作论文 · arXiv'26
     summary:
       en: Lightweight orchestration utilities for asynchronous Ray pipelines, with RayModule, overlapped microbatch execution, and DAG scheduling.
       zh: 面向异步 Ray 流水线的轻量编排库，提供 RayModule、微批重叠执行与 DAG 调度能力。

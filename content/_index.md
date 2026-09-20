@@ -242,7 +242,7 @@ sections:
     id: publications
     content:
       title: Selected Publications
-      count: 8
+      count: 9
       scholar_url: https://scholar.google.com/citations?user=hGEIyCEAAAAJ
     design:
       columns: '2'
