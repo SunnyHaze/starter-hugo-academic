@@ -2,8 +2,8 @@
 title: Xiaochen Ma
 role: Ph.D. Student in Computer Science and Engineering
 avatar_filename: avatar.jpg
-bio: I work on data infrastructure and high-performance distributed systems for
-  large-scale LLM data preparation, with a focus on Ray and Apache Spark.
+bio: I build data infrastructure and high-performance distributed systems that
+  turn heterogeneous data into reliable inputs for large-scale LLM training, with a focus on Ray and Apache Spark.
 interests:
   - LLM Data Infrastructure
   - LLM Data Preparation and Workflows
@@ -49,9 +49,11 @@ email: xiaochen.ma.cs@gmail.com
 
 ## Xiaochen Ma (马晓晨)
 
-I am a Ph.D. student in the Department of Computer Science and Engineering at the **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Binhang Yuan](https://binhangyuan.github.io/site/) and Prof. [Wentao Zhang](https://zwt233.github.io/). I am currently a **Qingyun Program Research Intern** with [**Tencent Hunyuan's Foundation Model Department**](https://hy.tencent.com/). My research focuses on **LLM data infrastructure and high-performance distributed systems** for large-scale LLM data preparation, including data-operator management systems designed for ease of use, distribution, and reproducibility, as well as high-performance data processing built on **Ray and Apache Spark**. My earlier work includes data preparation systems for data-centric AI and image forensics, especially image manipulation detection and localization.
+I am a Ph.D. student in the Department of Computer Science and Engineering at the **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Binhang Yuan](https://binhangyuan.github.io/site/) and Prof. [Wentao Zhang](https://zwt233.github.io/). My research focuses on the systems layer between heterogeneous raw data and large language model training: making data preparation easier to compose, distribute, reproduce, and operate with **Ray and Apache Spark**.
 
-Before starting my Ph.D., I was a Research Assistant at **Peking University** from January 2025 to January 2026, where I worked with Prof. [Wentao Zhang](https://zwt233.github.io/) on data preparation systems for large language models. From July 2023 to June 2024, I was a full-time Research Assistant at **Sichuan University**, where I worked with Prof. [Jizhe Zhou](https://knightzjz.github.io/) on image manipulation detection.
+I am currently a **Qingyun Program Research Intern** with [**Tencent Hunyuan's Foundation Model Department**](https://hy.tencent.com/) in Beijing, where I work on data infrastructure for large-scale LLM data preparation, including operator management and distributed pipelines for deduplication, clustering, and document and video processing.
+
+Before starting my Ph.D., I was a Research Assistant at **Peking University** from January 2025 to January 2026, where I worked with Prof. [Wentao Zhang](https://zwt233.github.io/) on LLM data preparation systems, including [DataFlow](https://github.com/OpenDCAI/DataFlow). Earlier, I was a full-time Research Assistant at **Sichuan University** from July 2023 to June 2024, working with Prof. [Jizhe Zhou](https://knightzjz.github.io/) on image manipulation detection and localization. This progression from reproducible vision benchmarks to general-purpose data preparation systems motivates my current work on scalable and reusable data workflows.
 
 I received my B.Eng. in Computer Science and Technology from the **College of Computer Science at Sichuan University** in June 2023. My undergraduate thesis was recognized by the university as an Outstanding Undergraduate Thesis.
 

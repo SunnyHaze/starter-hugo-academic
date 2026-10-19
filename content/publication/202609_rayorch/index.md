@@ -23,7 +23,7 @@ publication_types: ["article"]
 publication: "*arXiv preprint arXiv:2609.18703*"
 publication_short: "**arXiv'26**"
 abstract: >-
-  Preparing high-quality training data for foundation models requires scalable data pipelines that transform heterogeneous documents and videos into structured records. RayOrch introduces a programming model and distributed execution engine for lineage-controlled, multi-grain dataflows, preserving parent relationships, order, completion state, and result routing across input-dependent expansions. Its compiler validates dataflow programs, while the runtime tracks child membership, immediate parents, ordinals, and terminal states, with per-call FIFO ready queues and parent-scoped failure handling. On H20 GPUs, RayOrch achieves up to 15.14x speedup for MinerU workloads from 4 to 64 GPUs and 7.82x for video workloads from 8 to 64 GPUs, reducing end-to-end time compared with Ray Data, Daft, and Docling.
+  Foundation-model data preparation often expands one input into a variable number of records and still needs to preserve lineage, order, completion, and failure semantics. RayOrch is a programming model and distributed execution engine for these lineage-controlled, multi-grain dataflows. It combines compile-time validation with runtime tracking of parent-child relationships, ordered result assembly, and parent-scoped failures, and provides Ray-based execution for large-scale document and video processing. On H20 GPUs, RayOrch achieves up to 15.14x speedup for MinerU workloads from 4 to 64 GPUs and 7.82x for video workloads from 8 to 64 GPUs, reducing end-to-end time compared with Ray Data, Daft, and Docling.
 featured: true
 homepage_weight: 5
 links:

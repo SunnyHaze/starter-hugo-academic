@@ -74,11 +74,11 @@ projects:
       en: First-author paper · arXiv'26
       zh: 一作论文 · arXiv'26
     summary:
-      en: Lightweight orchestration utilities for asynchronous Ray pipelines, with RayModule, overlapped microbatch execution, and DAG scheduling.
-      zh: 面向异步 Ray 流水线的轻量编排库，提供 RayModule、微批重叠执行与 DAG 调度能力。
+      en: A programming model and distributed execution engine for foundation-model data preparation, preserving parent-child lineage, ordering, completion, and result assembly as each input expands into multiple records.
+      zh: 面向大模型数据准备的编程模型与分布式执行引擎，维护动态扩展中的父子血缘、处理顺序、完成状态与结果汇聚。
     contribution:
-      en: Project initiator and core developer. I built the initial orchestration abstractions and multi-model examples, refined RayModule and the pipeline executors, and integrated RayOrch into DataFlow for parallel operator execution.
-      zh: 项目发起与核心开发；搭建编排抽象与多模型示例，持续完善 RayModule 和流水线执行器，并将 RayOrch 集成至 DataFlow 的并行算子执行路径。
+      en: First author and project initiator. I designed the dataflow model and runtime for ordered variable-cardinality expansion, compiler validation, and parent-scoped failure handling, and integrated the Ray-based executor into DataFlow.
+      zh: 一作与项目发起人；负责数据流模型与运行时设计，处理动态数量扩展、顺序结果汇聚、编译期校验和父级错误传播，并将基于 Ray 的执行器集成至 DataFlow。
     tags:
       - Ray
       - Async Pipelines
