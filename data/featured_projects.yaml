@@ -14,10 +14,10 @@ projects:
       zh: 项目负责人 · SIGMOD'27 已接收
     summary:
       en: A composable data-pipeline and workflow system for LLM data preparation, spanning data generation, cleaning, evaluation, and orchestration.
-      zh: 面向大模型数据准备的可组合数据流水线与工作流系统，覆盖数据生成、清洗、评估与编排。
+      zh: 为大模型准备训练数据的开源框架，可将数据生成、清洗、评估等处理步骤组合成完整的工作流。
     contribution:
       en: Project lead and core contributor, coordinating a team of more than 10 students across system design, implementation, code review, integration, and releases. My engineering contributions span pipeline compilation and execution, operator and registry design, storage, serving, CLI tooling, and RayOrch integration.
-      zh: 项目负责人及核心贡献者，协调 10 余名同学推进系统设计、开发、代码审查、集成与发布；工程工作覆盖流水线编译与执行、Operator 与 Registry 设计、存储、服务、CLI 工具及 RayOrch 集成。
+      zh: 我负责项目研发，协调 10 余名同学完成系统设计、开发、代码审查和版本发布。具体参与流水线编译与执行、算子及注册机制、存储与服务接口、命令行工具的开发，以及 RayOrch 的集成。
     tags:
       - LLM Data Infra
       - Ray
@@ -36,10 +36,10 @@ projects:
       zh: NeurIPS 2024 Spotlight
     summary:
       en: A modular training and evaluation codebase and comprehensive benchmark for image manipulation detection and localization.
-      zh: 面向图像篡改检测与定位的模块化训练评测代码库与综合基准。
+      zh: 用于图像篡改检测与定位的训练、评测框架和基准，帮助研究者在统一的实验设置下复现和比较不同方法。
     contribution:
       en: Joint first author, codebase designer, and coding lead. I designed the modular training and evaluation framework and have maintained its metrics, model zoo, CLI, packaging, releases, and tests.
-      zh: 共同第一作者、代码库设计者与主要开发者；负责模块化训练评测框架设计，并持续维护指标、模型库、CLI、打包发布与测试。
+      zh: 我是共同第一作者，也是代码库的设计者和主要开发者，负责训练与评测框架，并持续维护评测指标、模型库、命令行工具、测试和版本发布。
     tags:
       - Benchmark
 
@@ -53,10 +53,10 @@ projects:
       zh: 重点推进
     summary:
       en: A Ray-powered acceleration layer that turns MinerU PDF-to-Markdown parsing into a scalable multi-GPU and multi-node data pipeline.
-      zh: 基于 Ray 的 MinerU 加速层，将 PDF-to-Markdown 解析升级为可扩展的多 GPU、多节点数据流水线。
+      zh: 基于 Ray 加速 MinerU 的 PDF 转 Markdown 处理，支持在多张 GPU、多台机器上批量解析文档。
     contribution:
       en: Project initiator and core developer. I built the initial package and release workflow, then refactored the sequential stages into an asynchronous pipeline with cross-stage overlap, while maintaining benchmarks and compatibility.
-      zh: 项目发起与核心开发；完成初始工程与发布流程，并将串行阶段重构为支持跨阶段重叠的异步流水线，同时维护性能基准与兼容性。
+      zh: 我发起并参与核心开发，完成项目搭建和发布流程，让原本串行的处理步骤可以交错执行，减少阶段间的等待，同时维护性能测试和兼容性。
     tags:
       - Ray
       - Pipeline Parallelism
@@ -75,10 +75,10 @@ projects:
       zh: 一作论文 · arXiv'26
     summary:
       en: A programming model and distributed execution engine for foundation-model data preparation, preserving parent-child lineage, ordering, completion, and result assembly as each input expands into multiple records.
-      zh: 面向大模型数据准备的编程模型与分布式执行引擎，维护动态扩展中的父子血缘、处理顺序、完成状态与结果汇聚。
+      zh: 基于 Ray 的数据处理框架，用于大规模文档和视频处理。例如，一份文档拆成多个页面后，系统会记录页面来自哪份文档、是否处理完成，并按原有顺序汇总结果。
     contribution:
       en: First author and project initiator. I designed the dataflow model and runtime for ordered variable-cardinality expansion, compiler validation, and parent-scoped failure handling, and integrated the Ray-based executor into DataFlow.
-      zh: 一作与项目发起人；负责数据流模型与运行时设计，处理动态数量扩展、顺序结果汇聚、编译期校验和父级错误传播，并将基于 Ray 的执行器集成至 DataFlow。
+      zh: 我是论文第一作者和项目发起人，负责数据流编程模型与执行引擎的设计，重点解决拆分后任务数量不固定、结果顺序还原和错误处理等问题，并将执行引擎接入 DataFlow。
     tags:
       - Ray
       - Async Pipelines

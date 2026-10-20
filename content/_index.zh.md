@@ -27,7 +27,7 @@ sections:
           date_end: ''
           track: experience
           description: |2-
-            **工作内容：** 基于 Ray 与 Apache Spark 构建面向大模型数据准备的 Data Infra。
+            **工作内容：** 基于 Ray 和 Apache Spark 开发大模型数据准备系统。
         # HUNYUAN_EXPERIENCE_END
         - title: 计算机科学与工程博士生
           company: 香港科技大学
