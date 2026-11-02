@@ -83,7 +83,7 @@ sections:
           description: |2-
             **Focus:** Building data infrastructure for LLM data preparation with Ray and Apache Spark.
         # HUNYUAN_EXPERIENCE_END
-        - title: PhD Student in Computer Science and Engineering
+        - title: Ph.D. Candidate in Computer Science and Engineering
           company: The Hong Kong University of Science and Technology
           company_url: 'https://hkust.edu.hk/'
           company_logo: hkust

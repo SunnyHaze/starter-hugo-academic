@@ -1,6 +1,6 @@
 ---
 title: Xiaochen Ma
-role: Ph.D. Student in Computer Science and Engineering
+role: Ph.D. Candidate in Computer Science and Engineering
 avatar_filename: avatar.jpg
 bio: I build data infrastructure and high-performance distributed systems that
   turn heterogeneous data into reliable inputs for large-scale LLM training, with a focus on Ray and Apache Spark.
@@ -31,7 +31,7 @@ organizations:
     # url: https://mbzuai.ac.ae/
 education:
   courses:
-    - course: Ph.D in Computer Science and Engineering
+    - course: Ph.D. Candidate in Computer Science and Engineering
       institution: HKUST
       year: 2028 (expected)
     - course: B.Eng. in Computer Science
@@ -49,7 +49,7 @@ email: xiaochen.ma.cs@gmail.com
 
 ## Xiaochen Ma (马晓晨)
 
-I am a Ph.D. student in the Department of Computer Science and Engineering at the **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Binhang Yuan](https://binhangyuan.github.io/site/) and Prof. [Wentao Zhang](https://zwt233.github.io/). My research focuses on the systems layer between heterogeneous raw data and large language model training: making data preparation easier to compose, distribute, reproduce, and operate with **Ray and Apache Spark**.
+I am a Ph.D. candidate in the Department of Computer Science and Engineering at the **Hong Kong University of Science and Technology (HKUST)**, advised by Prof. [Binhang Yuan](https://binhangyuan.github.io/site/) and Prof. [Wentao Zhang](https://zwt233.github.io/). My research focuses on the systems layer between heterogeneous raw data and large language model training: making data preparation easier to compose, distribute, reproduce, and operate with **Ray and Apache Spark**.
 
 I am currently a **Qingyun Program Research Intern** with [**Tencent Hunyuan's Foundation Model Department**](https://hy.tencent.com/) in Beijing, where I work on data infrastructure for large-scale LLM data preparation, including operator management and distributed pipelines for deduplication, clustering, and document and video processing.
 
